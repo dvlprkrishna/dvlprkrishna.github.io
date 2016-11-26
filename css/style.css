@@ -81,3 +81,37 @@ h2 {
     max-width: 29%;
     margin: 0 auto;
 }
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+    
+.text {
+    color: #6c6d70;
+    font-size: 18px;
+    line-height: 30px;
+    word-wrap: break-word;
+    max-width: 90%;
+    margin: 0 auto;
+}
+    
+.intro-text {
+    word-wrap: break-word;
+    font-weight: bold;
+    line-height: 40px;
+    margin-left: 20px;
+    font-size: 30px;
+    max-width: 80%;
+}
+    
+h2 {    
+    color: #555555;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 26px;
+    line-height: 18px;
+    font-weight: 900;
+    padding-top: 50px;
+}
+    
+}
+    
