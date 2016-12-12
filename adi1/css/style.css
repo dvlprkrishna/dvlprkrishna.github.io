@@ -34,9 +34,14 @@ h1 {
     text-align: left;
     margin: 0 20%;
     font-size: 24px;
+    padding-top: 50px;
 }
 nav {
     background-color: #373535;
+}
+.navbar-brand{ 
+  background: url(/images/logo.png) center / contain no-repeat;
+  width: 200px;
 }
 
 /* Showcase */
