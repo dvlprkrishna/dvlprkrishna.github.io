@@ -11,6 +11,7 @@ h1 {
     border-top: 5px solid #90c84b;
     border-bottom: 5px solid #90c84b;
     color: #90c84b;
+    margin-top: -20px; 
     padding-bottom: 0px;
     font-size: 48px;
     text-align: center;
@@ -50,7 +51,6 @@ h1 {
 }
 .labeltext {
     color: #90c84b;
-    margin-left: 30px;
     font-size: 24px;
     text-align: left;
     font-weight: 100;
