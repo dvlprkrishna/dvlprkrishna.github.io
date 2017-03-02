@@ -1,0 +1,91 @@
+body {
+    background-color: #ffea70;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    color: #232027;
+    margin: 0;
+}
+
+h2 {
+    font-size: 52px;
+    font-weight: bold;
+    line-height: 58px;
+    margin: 30px auto;
+    
+}
+
+h3 {
+    font-size: 26px;
+    font-weight: bolder;
+    line-height: 46px;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p {
+    font-size: 20px;
+    text-align: center;
+    line-height: 39px;
+    font-weight: 400;
+    word-wrap: break-word;
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.intro {
+    max-width: 60%;
+    word-break: break-word;
+}
+
+span { 
+    font-weight: 300;
+    opacity: 0.7;
+    font-size: 30px;
+    line-height: 20px;
+}
+
+a {
+    font-weight: bold;
+    color: rgba(39,39,39,0.9);
+    outline: none;
+    display: inline-block;
+	text-decoration: none;
+	letter-spacing: 1px;
+    
+}
+
+a:hover, a:focus {
+    color: #fff;
+}
+
+img {
+    max-width: 55%;
+}
+img:hover {
+    transition: all .2s ease-in-out;
+	outline: 5px solid rgba(49, 51, 45, 0.5);
+	-webkit-transition: all 0.2s;
+	   -moz-transition: all 0.2s;
+	     -o-transition: all 0.2s;
+			transition: all 0.2s;
+}
+
+.container {
+    text-align: center;
+}
+.box {
+    display: inline-block;
+    max-width: 50%;
+    text-align: left;
+    margin: 1em;
+}
+.box p{
+    text-align: left;
+}
+
+.roboto {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+}
