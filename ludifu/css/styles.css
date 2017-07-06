@@ -7,7 +7,6 @@ html {
 body {
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    font-weight: 300;
     color: #c8c8c8;
     line-height: 28px;
 }
@@ -34,7 +33,7 @@ hr {
 /* Header section */
 
 #header {
-    background: url(http://demo.templateocean.com/premium/template/kane/files/images/bg-1.jpg) no-repeat center center fixed;
+    background: url(../img/bg.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
