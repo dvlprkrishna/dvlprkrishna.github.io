@@ -1,0 +1,67 @@
+/***** Global style *****/
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+/***** Navigation *****/
+
+
+/***** btn1 *****/
+
+
+.btn1 {
+    color: #FFFFFF;
+    background-color: #424242;
+    transition: all 0.2s linear;
+    border-radius: 50px;
+    padding: 20px 40px;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.btn1:hover {
+    color: #424242;
+    background-color: #FFFFFF;
+}
+
+
+/***** btn2 *****/
+
+.btn2 {
+    border: 2px solid #525252;
+    display: inline-block;
+    padding: 15px 40px;
+    color: #525252;
+}
+.btn2:hover {
+    border-color: #41c27d;
+    color: #41c27d;
+}
+
+
+/***** btn3 *****/
+
+.btn3 {
+    text-transform: uppercase;
+    padding: 20px 40px;
+    border: 2px solid #bfd9f1;
+    border-radius: 30px;
+    color: #bfd9f1;
+}
+.btn3:hover {
+    color: #a0c3e5;
+    border: 2px solid #a0c3e5;
+}
+
+
+
+
+
+
