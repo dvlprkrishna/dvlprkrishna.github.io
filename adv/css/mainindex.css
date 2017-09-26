@@ -1,0 +1,368 @@
+/*
+Table of Content -
+------------------
+0 - General Style 
+1 - Typography
+2 - Section wraps
+3 - Miscellenouse Style
+4 - Custom Button Style
+5 - Intro Section
+6 - About Section
+7 - Features Section
+8 - Testimonial Section
+9 - Clients Section
+10 - Cta Section
+11 - Footer Section
+12 - pricing Section
+13 - media queries
+===============================*/
+
+/*
+0 - General Style
+===============================*/
+body {
+    font-family: 'Open Sans', helvetica, roboto, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/*
+1 - Typography
+===============================*/
+a { text-decoration: none; }
+a:hover { text-decoration: none; }
+
+h1 { font-size: 2.2em; font-weight: 300; }
+h2 { font-size: 1.8em; font-weight: bold; }
+h3 { font-size: 1.4em; font-weight: bold; }
+h4 { font-size: 1.1em; font-weight: bold; }
+h5 { font-size: 0.9em; font-weight: bold; }
+h6 { font-size: 0.8em; font-weight: bold; }
+
+p { font-size: 1.2em; font-weight: 400; }
+.advbig { font-size: 1.6em; font-weight: 300; margin-bottom: 40px; }
+.advbigger { font-size: 1.8em; font-weight: 300; margin-bottom: 40px; }
+.advbiggest { font-size: 2.2em; font-weight: 300; margin-bottom: 40px; }
+.advmedium { font-size: 1.4em; font-weight: 300; }
+.advsmall { font-size: 1em; font-weight: 400; }
+.advlittle { font-size: 0.9em; font-weight: 400; }
+.advsmaller { font-size: 0.8em; font-weight: 400; }
+.advsmallest { font-size: 0.7em; font-weight: 400; }
+
+.muted { 
+    color: #90a1b8;
+}
+.blue {
+    color: #0c77f8;
+}
+.red {
+    color: #f80c0c;
+}
+.green {
+    color: #70eca9;
+}
+.wt400{
+    font-weight: 600;
+}
+
+li { font-size: 1em; font-weight: 400; }
+span { font-size: 1em; font-weight: 400; }
+
+/*
+2 - Section wrap
+===============================*/
+#grid .gridwrap { margin:0 auto; max-width: 75% }
+#about .aboutwrap { margin:0 auto; max-width: 75% }
+#feature .featurewrap { margin:0 auto; max-width: 75% }
+#testimonial .testimonialwrap { margin:0 auto; max-width: 80% }
+#clients .clientswrap { margin:0 auto; max-width: 100% }
+#cta .ctawrap { margin:0 auto; max-width: 75% }
+#footer .footerwrap { margin:0 auto; max-width: 90% }
+
+/* pricing , 404 ,etc */
+#pricing .pricingwrap { margin: 0 auto; max-width: 85%; }
+
+/*
+3 - Miscellenouse Style
+===============================*/
+section {
+    padding-bottom: 170px;
+    padding-top: 100px;
+}
+#footer {
+    padding-bottom: 10px;
+    padding-top: 40px;
+}
+#cta {
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
+
+/*
+4 - Custom Button style
+===============================*/
+/* image button */
+.advbtn-img {
+    display: inline-block;
+    position: relative;
+}
+.advbtn-img img {
+    border-radius: 4px;
+}
+.advbtn-img::before {
+    color: #90a1b8;
+    content: '\f04b';
+    font-family: 'FontAwesome';
+    font-size: 50px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 3px 15px 3px 25px;
+    position: absolute;
+    z-index: 5;
+}
+.advbtn-img:hover.advbtn-img::before {
+    color: #f7f7f7;
+}
+/* Primary button */
+.advbtn {
+    background-color: #6071d5;
+    border: 2px solid #6071d5;
+    border-radius: 4px;
+    color: #ffffff;
+    display: inline-block;
+    font-weight: 400;
+    padding: 8px 20px;
+    margin: 0px 10px 10px 0;
+    
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+.advbtn:hover {
+    color: #f7f7f7;
+    opacity: 0.7;
+}
+/* outline button */
+.advbtn-outline {
+    border: 2px solid #6071d5;
+    border-radius: 4px;
+    color: #6071d5;
+    display: inline-block;
+    font-weight: 400;
+    padding: 8px 20px;
+    margin: 0px 10px 10px 0;
+    
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+.advbtn-outline:hover {
+    color: #6071d5;
+}
+
+/*
+5 - grid Section
+===============================*/
+#grid {
+    height: 100vh;
+    padding-top: 30px;
+    background-color: #2e2d32;
+    box-shadow: 0px -10px 29px -2px rgba( 0, 0, 0,0.9);
+}
+#grid img {
+    padding: 20px 20px 0;
+}
+/*
+6 - About Section
+===============================*/
+#about p {
+    margin-bottom: 30px;
+}
+#about ul li {
+    margin-bottom: 10px;
+}
+
+/*
+7 - Feature Section
+===============================*/
+#feature {
+    background-color: #f7f7f7;
+}
+#feature img {
+    margin-bottom: 20px;
+    max-width: 150px;
+    filter: grayscale(0%);
+}
+#feature .featureblock:hover img {
+    filter: grayscale( 100% );
+}
+#feature .featuretext {
+    text-align: left;
+}
+
+/*
+8 - Testimonial Section
+===============================*/
+#testimonial .quotebox {
+    padding: 25px;
+}
+#testimonial .quote p::before{
+    content: url(../img/quote.png);
+}
+#testimonial .source {
+    text-align: right;
+}
+#testimonial .source img {
+    max-width: 40px;
+    max-height: 40px;
+    border-radius: 100%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+#testimonial .source p {
+    display: inline-block;
+    padding-top: 10px;
+}
+#testimonial .advbtn {
+    margin-top: 50px;
+    margin-right: 0;
+}
+/*
+9 - Clients Section
+===============================*/
+#clients {
+    background-color: #f7f7f7;
+}
+#clients img {
+    cursor: pointer;
+    filter: opacity( 0.7);
+    display: inline-block;
+    max-width: 200px;
+    margin-right: 10px;
+}
+#clients img:hover {
+    filter: opacity( 1 );
+}
+
+/*
+10 - Cta Section
+===============================*/
+#cta .advbtn {
+    margin: 20px auto 20px 40px;
+}
+
+/*
+11 - Footer Section
+hover a  color: #337ab7;
+===============================*/
+#footer {
+    background-color: #2e2d32;
+    color: #90a1b8;
+    box-shadow: 0px -2px 29px -10px rgba( 0, 0, 0,0.9);
+}
+#footer img {
+    opacity: 0.4;
+    margin-top: 15px;
+}
+#footer img:hover {
+    opacity: inherit;
+}
+#footer p {
+    margin-top: 10px;
+    line-height: 28px;
+}
+#footer h4 {
+    font-size: 0.9em;
+    font-weight: bold;
+    line-height: 28px;
+    margin-top: 0;
+}
+#footer ul {
+    padding-left: 0;
+    list-style: none;
+}
+#footer li {
+    font-size: 0.7em;
+    line-height: 22px;
+    padding-left: 20px;
+}
+#footer li a, .footline a {
+    margin-top: 0;
+    color: #90a1b8;
+}
+#footer li a:hover, .footline a:hover {
+    color: #6071d5;
+}
+#footer .footline {
+    padding-top: 10px;
+}
+
+/*
+12 - Pricing Section 
+===============================*/
+#pricing {
+    background-color: #f7f7f7;
+}
+#pricing .planbox {
+    border: 2px solid #efefef;
+    border-radius: 6px;
+    margin: 30px auto;
+}
+#pricing .planbox:hover {
+    transition: 0.2s ease-in;
+    box-shadow: 0 0 8px rgba( 200, 200, 200, 0.9);
+    border: 2px solid #dedede;
+}
+#pricing .planwrap {
+    display: block;
+    padding: 40px;
+}
+#pricing .title {
+    margin: 0;
+    line-height: 42px;
+}
+#pricing .title .advbig {
+    margin-bottom: 10px;
+}
+#pricing .info {
+    padding: 10px;
+}
+#pricing .info ul {
+    padding: 0;
+    margin: 20px 0 30px;
+    list-style: none;
+    text-align: left;
+}
+#pricing .info li {
+    position: relative;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 2px;
+    padding-left: 16px;
+}
+#pricing .info li:before {
+    content: "";
+    background-color: #90a1b8;
+    border-radius: 100%;
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    top: 15px;
+    left: 0;
+    transform: translateY(-50%);
+}
+#pricing hr {
+    height: 2px;
+    background-color: #efefef;
+    border-color: #efefef;
+}
+#pricing .planbox:hover hr {
+    border-color: #dedede;
+    background-color: #dedede;
+}
+#pricing .advbtn {
+    margin: 0;
+}
