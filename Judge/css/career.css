@@ -1,0 +1,545 @@
+/*
+Table of Content -
+=========================
+00 - General Css
+01 - Section Wrap
+02 - Intro Section
+09 - Footer
+10 - Back to Top
+
+11 - CTA Section
+12 - Custom Button
+=========================*/
+
+/*
+03 - NAVBAR
+========================*/
+
+.navbar {
+    padding: 0 50px;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0;
+
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: transparent;
+    background: transparent;
+    border-color: transparent;
+    color: #333;
+    -webkit-transition: .3s all;
+    transition: .3s all;
+}
+.navbar a {
+    color: #fff !important;
+}
+.navbar button {
+    color: inherit !important;
+}
+.navbar.compressed {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #6dcc7c;
+    color: #6dcc7c;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+.navbar-default .navbar-toggle {
+    border: none;
+}
+.navbar-toggle span.icon-bar {
+    transition: all 0.15s;
+}
+.navbar-toggle span:nth-child(2) {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+}
+.navbar-toggle span:nth-child(3) {
+    opacity: 0;
+}
+.navbar-toggle span:nth-child(4) {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+}
+.navbar-toggle.collapsed span:nth-child(2), .navbar-toggle.collapsed span:nth-child(4) {
+    transform: rotate(0);
+}
+.navbar-toggle.collapsed span:nth-child(3) {
+    opacity: 1;
+}
+
+
+
+
+/*
+00 - General Css
+=========================*/
+body {
+    font-family: 'Open Sans', helvetica, sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    /*
+    color: #f6f6f7;
+    background-color: #101019;
+    */
+    color: #292929;
+    font-smoothing: antialiased;
+    -mox-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1 { font-size: 2.4em; line-height: 58px; }
+h2 { font-size: 1.9em; line-height: 46px; }
+h3 { font-size: 1.2em; line-height: 30px; }
+h4 { font-size: 1em; font-weight: bold;}
+h5 { font-size: 0.8em; line-height: 24px; }
+h6 { font-size: 0.7em; line-height: 20px; }
+p { font-size: 1em; line-height: 28px; }
+
+hr {
+    border: 0;
+    height: 3px;
+    width: 100px;
+    background: #FABB05;
+    margin: 22px 0 60px;
+}
+hr .center {
+    text-align: center;
+    border: 0;
+    height: 3px;
+    width: 100px;
+    background: #FABB05;
+}
+
+.ct-biggest { font-size: 2.4em; }
+.ct-big { font-size: 1.9em; }
+.ct-semibig { font-size: 1.4em; }
+.ct-default { font-size: 1em; }
+.ct-small { font-size: 0.8em; }
+.ct-smallest { font-size: 0.7em; }
+
+.wt-400 { font-weight: 400; }
+.wt-600 { font-weight: 600; }
+.wt-bold { font-weight: bold; }
+
+a { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:focus { text-decoration: none; }
+a:visited { text-decoration: none; }
+ul, li {
+    margin:0;
+    padding:0;
+}
+/*
+01 - Section Wrap
+========================*/
+.footerwrap { margin: 0 auto; max-width: 90%; }
+
+/*
+03 - Team Intro Section
+========================*/
+#teamintro {
+    background-color: cyan;
+    padding: 40px 0;
+    color: #FFF;
+}
+#teamintro .content h1 {
+    font-size: 2em;
+    font-weight: 600;
+    line-height: 1.1;
+    margin-bottom: 16px;
+}
+#teamintro .content p {
+    font-size: 1.1em;
+    font-weight: 400;
+    line-height: 1.1;
+    margin-bottom: 16px;
+}
+/*
+Linkbar
+========================*/
+#linkbar {
+    background-color: #f9f9f9;
+    padding: 10px 0;
+    border-bottom: 6px solid #eee;
+}
+#linkbar li {
+    padding: 0 10px;
+}
+#linkbar .active {
+    color: skyblue;
+}
+#linkbar a {
+    color: #555;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#linkbar .fa {
+    padding-right: 10px;
+}
+/*
+Team Section
+========================*/
+#team {
+    margin: 50px auto;
+}
+#team .card {
+    padding: 0 15px;
+    text-align: left;
+}
+#team .card a {
+    transition: background-color 200ms ease-in-out, opacity 200ms ease-in-out;
+    border-radius: 5px;
+    background-color: #e6eef1;
+    display: block;
+    height: 100px;
+    margin-bottom: 40px;
+    padding: 28px 20px;
+    position: relative;
+}
+#team .card a:hover {
+    background-color: #f5f5f5;
+}
+#team .card h4 {
+    display: block;
+    color: #384047;
+    font-style: normal;
+    margin: 0;
+}
+#team .card span {
+    margin-top: 5px;
+    color: #717f86;
+    display: block;
+    font-size: 14px;
+}
+#team .card img {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    width: 64px;
+    height: 64px;
+    border-radius: 128px;
+    margin-top: -32px;
+}
+
+/*
+03 - Footer Section
+========================*/
+#breadcrumbs {
+    text-align: center;
+    background-color: #F5F5F5;
+    padding: 15px 0;
+}
+#breadcrumbs a {
+    font-size: 0.7em;
+    font-weight: bold;
+    color: #16171D;
+    line-height: 26px;
+}
+#breadcrumbs a:hover {
+    color: #5fcf80;
+}
+#breadcrumbs a.disabled {
+    color: #5fcf80;
+    pointer-events: none;
+}
+
+/*
+03 - Footer Section
+========================*/
+#individual {
+    margin: 0 auto; max-width: 90%;
+    margin: 100px auto;
+}
+#individual .skill {
+    margin: 30px 0;
+}
+.biocontent .bio {
+    text-align: left;
+    margin: 0 auto; max-width: 60%;
+}
+.biocontent h4 {
+    color: #5fcf80;
+    padding: 20px 0 15px;
+}
+.skill h4 {
+    text-align: left;
+    margin-left: 225px;
+}
+.skill h4, .contact h4 {
+    color: #5fcf80;
+    padding: 20px 0 15px;
+}
+#individual .biocontent h4 {
+    text-align: left;
+    margin: 0 auto; max-width: 60%;
+}
+#individual .contact a {
+    font-size: 1.1em;
+    font-weight: 700;
+    color: #16171D;
+    margin-right: 30px;
+}
+#individual .contact a:hover{
+    color: #5fcf80;
+}
+#individual p.skilltxt {
+    margin: 15px auto 40px;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+#individual .txtblue { color: #049dff; }
+#individual .txtyellow { color: #fdba04; }
+#individual .txtgreen { color: #ed687c; }
+#individual .txtpink { color: #1abc9c; }
+#individual .progress{
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    background: none;
+    margin: 0 auto;
+    box-shadow: none;
+    position: relative;
+}
+#individual .progress:after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 12px solid #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#individual .progress > span{
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+#individual .progress .progress-left{
+    left: 0;
+}
+#individual .progress .progress-bar{
+    width: 100%;
+    height: 100%;
+    background: none;
+    border-width: 12px;
+    border-style: solid;
+    position: absolute;
+    top: 0;
+}
+#individual .progress .progress-left .progress-bar{
+    left: 100%;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-left: 0;
+    -webkit-transform-origin: center left;
+    transform-origin: center left;
+}
+#individual .progress .progress-right{
+    right: 0;
+}
+#individual .progress .progress-right .progress-bar{
+    left: -100%;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-right: 0;
+    -webkit-transform-origin: center right;
+    transform-origin: center right;
+    animation: loading-1 1.8s linear forwards;
+}
+#individual .progress .progress-value{
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    background: #44484b;
+    font-size: 24px;
+    color: #fff;
+    line-height: 135px;
+    text-align: center;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+#individual .progress.blue .progress-bar{
+    border-color: #049dff;
+}
+#individual .progress.blue .progress-left .progress-bar{
+    animation: loading-2 1.5s linear forwards 1.8s;
+}
+#individual .progress.yellow .progress-bar{
+    border-color: #fdba04;
+}
+#individual .progress.yellow .progress-left .progress-bar{
+    animation: loading-3 1s linear forwards 1.8s;
+}
+#individual .progress.pink .progress-bar{
+    border-color: #ed687c;
+}
+#individual .progress.pink .progress-left .progress-bar{
+    animation: loading-4 0.4s linear forwards 1.8s;
+}
+#individual .progress.green .progress-bar{
+    border-color: #1abc9c;
+}
+#individual .progress.green .progress-left .progress-bar{
+    animation: loading-5 1.2s linear forwards 1.8s;
+}
+@keyframes loading-1{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+}
+@keyframes loading-2{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(144deg);
+        transform: rotate(144deg);
+    }
+}
+@keyframes loading-3{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+}
+@keyframes loading-4{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(36deg);
+        transform: rotate(36deg);
+    }
+}
+@keyframes loading-5{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(126deg);
+        transform: rotate(126deg);
+    }
+}
+@media only screen and (max-width: 990px){
+    .progress{ margin-bottom: 20px; }
+}
+
+
+/*
+03 - Footer Section
+========================*/
+#footer {
+    border-top: 6px solid #ddd;
+    padding: 40px 0;
+    position: relative;
+    background: #111;
+}
+#footer a {
+    color: #393c3e;
+    transition: all .5s;
+}
+#footer a:hover {
+    transition: all .5s;
+    color: #ddd;
+    color: rgba(221, 221, 221, 0.51);
+}
+#footer .social {
+    padding-top: 25px;
+}
+#footer .social li {
+    padding: 0 10px;
+}
+#footer p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #393c3e;
+}
+
+
+/*
+03 - Backtotop Section
+========================*/
+.backtotop {
+    color: #FFF700; /* text/arrow color */ 
+    display: none;
+    z-index: 999;
+    /* float in bottom right corner */
+    /* 20 pixels from edge */
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+}
+a.backtotop {
+    font-weight: 600;
+    font-size: 50px;
+    padding-left: 2px;
+    padding-top: 4px;    
+}
+a.backtotop:hover {
+    color: #FFF700;
+}
+a.backtotop .fa:before {
+    font-weight: 600;
+    font-size: 48px;
+    speak: none;
+    display: block;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-left: -4px;
+}
+
+
+
+
+#career {
+    margin: 40px auto;
+}
+
+
+input {
+    display: inline-block;
+    font-size: 1em;
+    border-radius: 4px;
+    min-width: 50px;
+    max-width: 600px;
+    background-color: #ffffff;
+    margin: 10px 10px 10px;
+    padding: 8px 20px 8px 10px;
+    border: 2px solid #c9c9c9;
+}
+input[type="file"]{
+    margin: 0px auto 20px;
+}
+.ct-btn {
+    background-color: #6071d5;
+    border: 2px solid #6071d5;
+    border-radius: 4px;
+    color: #fff;
+    display: inline-block;
+    padding: 8px 20px;
+    margin: 0px 10px 10px 0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
