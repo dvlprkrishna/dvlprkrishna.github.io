@@ -1,0 +1,583 @@
+/*
+Table of Content -
+
+00 - General Css
+01 - Navbar
+02 - Intro
+03 - Cta block bottom
+04 - About
+05 - Area of Expertise / Features
+06 - Cta banner
+07 - Testimonial
+08 - Cta block
+09 - Contact Us
+10 - Footer
+11 - Back to Top
+============================*/
+
+/*
+General Css
+============================*/
+body {
+    font-family: 'Open Sans', helvetica, sans-serif;
+    font-style: normal;
+    font-size: 20px;
+/*    color: #f6f6f7;*/
+/*    background-color: #101019;*/
+    color: #292929;
+    font-smoothing: antialiased;
+    -mox-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1 { font-size: 2.4em; line-height: 58px; }
+h2 { font-size: 1.9em; line-height: 46px; }
+h3 { font-size: 1.2em; line-height: 30px; }
+h4 { font-size: 1em; font-weight: bold;}
+h5 { font-size: 0.8em; line-height: 24px; }
+h6 { font-size: 0.7em; line-height: 20px; }
+p { font-size: 1em; line-height: 28px; }
+
+hr {
+    border: 0;
+    height: 3px;
+    width: 100px;
+/*    background: #FABB05; */
+    background: #B92B27;
+    margin: 22px 0 60px;
+}
+
+.wt-400 { font-weight: 400; }
+.wt-600 { font-weight: 600; }
+.wt-bold { font-weight: bold; }
+
+a { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:focus { text-decoration: none; }
+a:visited { text-decoration: none; }
+
+/*
+Navbar
+============================*/
+.navbar {
+    padding: 0 50px;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0;
+
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: transparent;
+    background: transparent;
+    border-color: transparent;
+    color: #333;
+    -webkit-transition: .3s all;
+    transition: .3s all;
+}
+.navbar a {
+    color: #fff !important;
+}
+.navbar button {
+    color: inherit !important;
+}
+.navbar.compressed {
+    padding-top: 10px;
+    padding-bottom: 10px;
+/*    background: #6dcc7c;*/
+    background: #B92B27;
+/*    color: #6dcc7c;*/
+    color: #000;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+.navbar-default .navbar-toggle {
+    border: none;
+}
+.navbar-toggle span.icon-bar {
+    transition: all 0.15s;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #FFF;
+}
+.navbar-toggle span:nth-child(2) {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+}
+.navbar-toggle span:nth-child(3) {
+    opacity: 0;
+}
+.navbar-toggle span:nth-child(4) {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+}
+.navbar-toggle.collapsed span:nth-child(2), .navbar-toggle.collapsed span:nth-child(4) {
+    transform: rotate(0);
+}
+.navbar-toggle.collapsed span:nth-child(3) {
+    opacity: 1;
+}
+/*
+Section Wrap
+============================*/
+.aboutwrap, .featurewrap, .ctabannerwrap, .testimonialwrap { margin: 0 auto; max-width: 90%; }
+/*
+Intro
+============================*/
+#intro {
+    height: 100vh;
+    background: url(../img/libraray.jpg) center center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+}
+#intro .introtxt {
+    padding-top: 250px;
+    text-align: center;
+}
+#intro .introtxt h1 {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 4.4em; 
+    line-height: 100px;
+    font-style: italic;
+    font-weight: 100;
+    color: #FFF700;
+}
+#intro .introtxt p {
+    font-family: 'Playfair Display', serif;
+    font-size: 2em;
+    color: #f9f9f9;
+}
+
+/*
+About
+============================*/
+#about {
+    border-top: 6px solid #ddd;
+    padding: 80px 0;
+    background-color: #f4f7f8;
+}
+#about p {
+    text-align: justify;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+#about strong {
+/*    color: #5fcf80;*/
+    color: #B92B27;
+    font-size: 1.2em;
+}
+
+/*
+Area of Expertise / Features
+============================*/
+#features {
+    padding: 50px 0;
+}
+#features .block {
+    margin-bottom: 50px;
+    padding: 0 13px;
+}
+#features img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+#features h3 {
+    color: #292929;
+    font-size: 1em;
+    margin-top: 0px;
+    font-weight: 700;
+}
+#features p {
+    font-size: 0.8em;
+    line-height: 24px;
+    color: #a0a0a0;
+    font-weight: 400;
+}
+#features .readmore {
+    font-weight: 600;
+}
+/*
+Cta banner
+============================*/
+#ctabanner {
+    padding: 30px 0;
+    background-color: #f4f7f8;
+}
+#ctabanner .content {
+    font-size: 0.8em;
+    line-height: 24px;
+    text-align: left;
+}
+#ctabanner .block .content {
+    display: inline-block;
+}
+#ctabanner .block span {
+    float: left;
+    padding-right: 15px;
+    padding-top: 10px;
+}
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+.fa.fa-18 { font-size: 18px; }
+.fa.fa-24 { font-size: 24px; }
+.fa.fa-36 { font-size: 36px; }
+.fa.fa-48 { font-size: 48px; }
+
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/*
+Testimonial
+============================*/
+#testimonial {
+    padding: 50px 0;
+    color: #4ECDC4;
+    background: #111;
+}
+#testimonial .quote p::before{
+    color: #FFF700;
+    font-size: 6em;
+    font-style: italic;
+    content: '"';
+}
+#testimonial small {
+    color: #c5c5c5;
+    font-size: 15px;
+    margin: 12px 0;
+}
+#testimonial .quote {
+    padding: 60px;
+    margin-top: 20px;
+    position: relative;
+    background: none;
+}
+#testimonial .carousel-control.left {
+    background-image: none;
+    background-repeat: no-repeat;
+}
+#testimonial .carousel-control.right {
+    background-image: none;
+    background-repeat: no-repeat;
+    right: 0;
+    left: auto;
+}
+#testimonial .carousel-control {
+    position: absolute;
+    top: 45%;
+    font-size: 20px;
+    color: white;
+    width: 0%;
+    opacity: inherit;
+    text-align: center;
+    text-shadow: none;
+}
+
+/*
+Cta block bottom
+============================*/
+#cta {
+    border-top: 6px solid #ddd;
+    background-color: #f4f7f8;
+}
+#cta .ctalinkwrap {
+    padding: 10px;
+    background-color: white;
+    max-width: 50%;
+    margin: -45px auto 10px;
+    text-align: center;
+    border: 10px solid #FFF700;
+}
+#cta a.left {
+    border-right: 2px solid #FFF700;
+}
+#cta a {
+    display: inline-block;
+    font-weight: 600;
+    color: #555;
+    padding: 10px 30px;
+}
+
+/*
+Contact Us
+============================*/
+#contact {
+    padding: 50px 0 80px;
+    background-color: #f4f7f8;
+}
+#contact input, textarea {
+    display: inline-block;
+    font-size: 1em;
+    border-radius: 4px;
+    min-width: 500px;
+    max-width: 800px;
+    background-color: #ffffff;
+    margin: 0 0 24px 0;
+    padding: 8px 20px 8px 10px;
+    border: 2px solid #c9c9c9;
+}
+#contact textarea {
+    resize: none;
+}
+#contact hr {
+    background: #5fcf80;
+}
+#contact .ct-btn {
+/*    background-color: #5fcf80;*/
+    background-color: #B92B27;
+    border: 2px solid #5fcf80;
+    border-radius: 4px;
+    color: #fff;
+    color: #fff;
+    display: inline-block;
+    padding: 8px 20px;
+    margin: 0px 10px 10px 0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+#contact .ct-btn:hover {
+    color: #f7f7f7;
+    opacity: 0.7;
+}
+
+/*
+Footer
+============================*/
+#footer {
+    border-top: 6px solid #ddd;
+    padding: 40px 0;
+    position: relative;
+    background: #111;
+}
+#footer a {
+    /*    color: #393c3e;*/
+    color: white;
+    transition: all .5s;
+}
+#footer a:hover {
+    transition: all .5s;
+    color: #ddd;
+    color: rgba(221, 221, 221, 0.51);
+}
+#footer .social {
+    padding-top: 25px;
+}
+#footer .social li {
+    padding: 0 10px;
+}
+#footer p {
+    font-size: 18px;
+    font-weight: 600;
+    /*color: #393c3e;  */
+    color: white;
+}
+
+/*
+Back to To
+============================*/
+.backtotop {
+/*    color: #FFF700;  text/arrow color  */
+    color: #B92B27; 
+    display: none;
+    z-index: 999;
+    /* float in bottom right corner */
+    /* 20 pixels from edge */
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+}
+a.backtotop {
+    font-weight: 600;
+    font-size: 50px;
+    padding-left: 2px;
+    padding-top: 4px;    
+}
+a.backtotop:hover {
+/*    color: #FFF700;*/
+    color: #B92B27;
+}
+a.backtotop .fa:before {
+    font-weight: 600;
+    font-size: 48px;
+    speak: none;
+    display: block;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-left: -4px;
+}
+
+
+
+
+
+/*
+Media Queries
+============================*/
+
+/* xs < 768 */
+@media screen and (max-width: 767px) {
+
+
+    h1 { font-size: 2em; line-height: 58px; }
+    h2 { font-size: 1.4em; line-height: 46px; }
+    h3 { font-size: 0.8em; line-height: 30px; }
+    
+    p { font-size: 0.8em; line-height: 28px; }
+    
+    #intro .introtxt {
+        padding-top: 200px;
+    }
+    
+    #intro .introtxt h1 {
+        font-size: 2.6em; 
+    }
+    #intro .introtxt p {
+        font-size: 1.5em;
+    }
+    
+    
+
+    #cta {
+        border-top: 6px solid #ddd;
+        background-color: #f4f7f8;
+    }
+    #cta .ctalinkwrap {
+        padding: 5px;
+        background-color: white;
+        max-width: 50%;
+        margin: -35px auto 10px;
+        text-align: center;
+        border: 8px solid #FFF700;
+    }
+    #cta a.left {
+        display: none;
+        border-right: 2px solid #FFF700;
+    }
+    #cta a {
+        display: inline-block;
+        font-weight: 600;
+        font-size: 16px;
+        color: #555;
+        padding: 5px 15px;
+    }
+    
+}
+
+/* sm */
+@media screen and (min-width: 768px) {
+    h1 { font-size: 2.2em; line-height: 58px; }
+    h2 { font-size: 1.7em; line-height: 46px; }
+    h3 { font-size: 1em; line-height: 30px; }
+    h4 { font-size: 0.9em; font-weight: bold;}
+    h5 { font-size: 0.7em; line-height: 24px; }
+    h6 { font-size: 0.6em; line-height: 20px; }
+    p { font-size: 0.9em; line-height: 28px; }
+    #intro .introtxt h1 {
+        font-size: 3.4em; 
+    }
+    #intro .introtxt p {
+        font-size: 1.5em;
+    }
+    
+    
+    #cta {
+        border-top: 6px solid #ddd;
+        background-color: #f4f7f8;
+    }
+    #cta .ctalinkwrap {
+        padding: 10px;
+        background-color: white;
+        max-width: 50%;
+        margin: -35px auto 10px;
+        text-align: center;
+        border: 8px solid #FFF700;
+    }
+    #cta a.left {
+        border-right: 2px solid #FFF700;
+    }
+    #cta a {
+        display: inline-block;
+        font-weight: 600;
+        font-size: 0.7em;
+        color: #555;
+        padding: 5px 15px;
+    }
+}
+
+/* md */
+@media screen and (min-width: 992px) {
+    h1 { font-size: 2.4em; line-height: 58px; }
+    h2 { font-size: 1.9em; line-height: 46px; }
+    h3 { font-size: 1.2em; line-height: 30px; }
+    h4 { font-size: 1em; font-weight: bold;}
+    h5 { font-size: 0.8em; line-height: 24px; }
+    h6 { font-size: 0.7em; line-height: 20px; }
+    p { font-size: 1em; line-height: 28px; }
+    #intro .introtxt h1 {
+        font-size: 4.4em; 
+    }
+    #intro .introtxt p {
+        font-size: 2em;
+    }
+    
+    #cta {
+        border-top: 6px solid #ddd;
+        background-color: #f4f7f8;
+    }
+    #cta .ctalinkwrap {
+        padding: 10px;
+        background-color: white;
+        max-width: 50%;
+        margin: -45px auto 10px;
+        text-align: center;
+        border: 10px solid #FFF700;
+    }
+    #cta a.left {
+        border-right: 2px solid #FFF700;
+    }
+    #cta a {
+        display: inline-block;
+        font-weight: 600;
+        font-size: 0.9em;
+        color: #555;
+        padding: 10px 30px;
+    }
+    
+}
+
+/* lg */
+@media screen and (min-width: 1200px) {
+    h1 { font-size: 2.4em; line-height: 58px; }
+    h2 { font-size: 1.9em; line-height: 46px; }
+    h3 { font-size: 1.2em; line-height: 30px; }
+    h4 { font-size: 1em; font-weight: bold;}
+    h5 { font-size: 0.8em; line-height: 24px; }
+    h6 { font-size: 0.7em; line-height: 20px; }
+    p { font-size: 1em; line-height: 28px; }
+    #intro .introtxt h1 {
+        font-size: 4.4em; 
+    }
+    #intro .introtxt p {
+        font-size: 2em;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
