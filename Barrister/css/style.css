@@ -615,7 +615,7 @@ Media Queries
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: @screen-md-min) {
-    body {
+    #footer {
         background-color: yellow;
     }
     .aboutwrap, .featurewrap, .ctabannerwrap, .testimonialwrap { margin: 0 auto; max-width: 90%; }
