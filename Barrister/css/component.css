@@ -2,46 +2,7 @@
 
 
 
-/*
-Alternate Expertise
-============================*/
-#ct-expertise .ct-expertisewrap {
-    margin: 80px auto;
-}
-#ct-expertise li {
-    padding-bottom: 8px;
-}
 
-#ct-expertise .heading h2 {
-    font-weight: 400;
-}
-#ct-expertise .heading {
-    cursor: pointer;
-}
-#ct-expertise .heading img {
-    width: 40px; 
-    margin-right: 30px;
-}
-#ct-expertise .answer p {
-    text-align: justify;
-}
-
-
-
-
-/*
-Courts
-============================*/
-#court .courtlist {
-    margin: 50px auto;
-    text-align: left;
-}
-#court .courtlist a {
-    text-decoration: underline;
-}
-#court .courtlist a:hover, a:visited, a:active {
-    text-decoration: underline;
-}
 
 
 
@@ -216,13 +177,10 @@ Expertise
 ============================*/
 #expertise .expertisewrap { max-width: 90%; margin: 0 auto;}
 #expertise .block {margin-bottom: 100px;}
-#expertise .block a img {display: inline-block; width: 50px;}
-#expertise .block a h2 { display: inline-block; margin: 20px 30px 0px; font-weight: 600; }
+#expertise .block a img {display: inline-block; width: 80px;}
+#expertise .block a h2 { display: inline-block; margin: 20px 30px; font-weight: 600; }
 #expertise .content {margin-top: 30px;}
-#expertise p {
-    font-weight: 400;
-    text-align: justify;
-}
+#expertise p {font-weight: 400;}
 #expertise {margin-top: 80px;}
 /*
 Error
