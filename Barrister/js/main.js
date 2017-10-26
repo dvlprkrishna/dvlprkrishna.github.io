@@ -1,3 +1,13 @@
+$(document).ready(function() {
+    window.onload = function () {
+        $('#load').fadeOut(500, function(){ $('#load').remove(); } );
+    }
+});
+
+$(window).on('load',function(){
+    $('#disclaimer').modal('show');
+});
+
 var amountScrolled = 300;
 $(window).scroll(function() {
     if ( $(window).scrollTop() > amountScrolled ) {
@@ -19,5 +29,10 @@ $(document).ready(function() {
         } else {
             $(".navbar").removeClass("compressed");
         }
+    });
+});
+$(document).ready(function(){
+    $('.heading').click(function(){
+        $(this).find('i').toggleClass('fa-plus fa-minus')
     });
 });
