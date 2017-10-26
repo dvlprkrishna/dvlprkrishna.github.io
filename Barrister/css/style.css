@@ -21,7 +21,7 @@ General Css
 body {
     font-family: 'Open Sans', helvetica, sans-serif;
     font-style: normal;
-    font-size: 30px;
+    font-size: 20px;
 /*    color: #f6f6f7;*/
 /*    background-color: #101019;*/
     color: #292929;
@@ -614,19 +614,10 @@ Media Queries
 
 
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: @screen-md-min) { 
+@media (min-width: @screen-md-min) {
     body {
-        font-family: 'Open Sans', helvetica, sans-serif;
-        font-style: normal;
-        font-size: 20px;
-        /*    color: #f6f6f7;*/
-        /*    background-color: #101019;*/
-        color: #292929;
-        font-smoothing: antialiased;
-        -mox-osx-font-smoothing: grayscale;
-        -webkit-font-smoothing: antialiased;
+        background-color: yellow;
     }
-    
     .aboutwrap, .featurewrap, .ctabannerwrap, .testimonialwrap { margin: 0 auto; max-width: 90%; }
 }
 
