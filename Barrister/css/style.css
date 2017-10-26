@@ -463,6 +463,11 @@ Media Queries
 
 /* xs < 768 */
 
+
+@media screen and (max-width: 767px) { 
+    .aboutwrap, .featurewrap, .ctabannerwrap, .testimonialwrap { margin: 0 auto; max-width: 100%; }
+}
+
 /*
 @media screen and (max-width: 767px) {
 
