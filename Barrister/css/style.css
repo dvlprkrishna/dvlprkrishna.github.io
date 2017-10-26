@@ -165,7 +165,7 @@ Navbar
 /*
 Section Wrap
 ============================*/
-.aboutwrap, .featurewrap, .ctabannerwrap, .testimonialwrap { margin: 0 auto; max-width: 90%; }
+.aboutwrap, .featurewrap, .ctabannerwrap, .testimonialwrap { margin: 0 auto; max-width: 100%; }
 /*
 Intro
 ============================*/
@@ -613,7 +613,10 @@ Media Queries
 
 
 
-
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) { 
+    .aboutwrap, .featurewrap, .ctabannerwrap, .testimonialwrap { margin: 0 auto; max-width: 90%; }
+}
 
 
 
