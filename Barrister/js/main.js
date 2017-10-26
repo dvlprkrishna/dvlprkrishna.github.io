@@ -31,3 +31,8 @@ $(document).ready(function() {
         }
     });
 });
+$(document).ready(function(){
+    $('.heading').click(function(){
+        $(this).find('i').toggleClass('fa-plus fa-minus')
+    });
+});

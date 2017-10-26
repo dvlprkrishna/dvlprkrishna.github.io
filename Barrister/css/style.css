@@ -16,48 +16,6 @@ Table of Content -
 ============================*/
 
 /*
-General Css
-============================*/
-body {
-    font-family: 'Open Sans', helvetica, sans-serif;
-    font-style: normal;
-    font-size: 20px;
-/*    color: #f6f6f7;*/
-/*    background-color: #101019;*/
-    color: #292929;
-    font-smoothing: antialiased;
-    -mox-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-}
-
-h1 { font-size: 2.4em; line-height: 58px; }
-h2 { font-size: 1.9em; line-height: 46px; }
-h3 { font-size: 1.2em; line-height: 30px; }
-h4 { font-size: 1em; font-weight: bold;}
-h5 { font-size: 0.8em; line-height: 24px; }
-h6 { font-size: 0.7em; line-height: 20px; }
-p { font-size: 1em; line-height: 28px; }
-
-hr {
-    border: 0;
-    height: 3px;
-    width: 100px;
-/*    background: #FABB05; */
-    background: #B92B27;
-    margin: 22px 0 60px;
-}
-
-.wt-400 { font-weight: 400; }
-.wt-600 { font-weight: 600; }
-.wt-bold { font-weight: bold; }
-
-a { text-decoration: none; }
-a:hover { text-decoration: none; }
-a:focus { text-decoration: none; }
-a:visited { text-decoration: none; }
-
-
-/*
 preloaders
 ============================*/
 
@@ -98,6 +56,47 @@ preloaders
 @-moz-keyframes rotation { from { -moz-transform: rotate(0deg); } to { -moz-transform: rotate(359deg); } }
 @-o-keyframes rotation { from { -o-transform: rotate(0deg); } to { -o-transform: rotate(359deg); } }
 @keyframes rotation { from { transform: rotate(0deg); } to { transform: rotate(359deg); } }
+
+/*
+General Css
+============================*/
+body {
+    font-family: 'Open Sans', helvetica, sans-serif;
+    font-style: normal;
+    font-size: 20px;
+/*    color: #f6f6f7;*/
+/*    background-color: #101019;*/
+    color: #292929;
+    font-smoothing: antialiased;
+    -mox-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1 { font-size: 2.4em; line-height: 58px; }
+h2 { font-size: 1.9em; line-height: 46px; }
+h3 { font-size: 1.2em; line-height: 30px; }
+h4 { font-size: 1em; font-weight: bold;}
+h5 { font-size: 0.8em; line-height: 24px; }
+h6 { font-size: 0.7em; line-height: 20px; }
+p { font-size: 1em; line-height: 28px; }
+
+hr {
+    border: 0;
+    height: 3px;
+    width: 100px;
+/*    background: #FABB05; */
+    background: #B92B27;
+    margin: 22px 0 60px;
+}
+
+.wt-400 { font-weight: 400; }
+.wt-600 { font-weight: 600; }
+.wt-bold { font-weight: bold; }
+
+a { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:focus { text-decoration: none; }
+a:visited { text-decoration: none; }
 
 /*
 Navbar
@@ -165,7 +164,7 @@ Navbar
 /*
 Section Wrap
 ============================*/
-.aboutwrap, .featurewrap, .ctabannerwrap, .testimonialwrap { margin: 0 auto; max-width: 100%; }
+.aboutwrap, .featurewrap, .ctabannerwrap, .testimonialwrap { margin: 0 auto; max-width: 90%; }
 /*
 Intro
 ============================*/
@@ -177,7 +176,7 @@ Intro
     -webkit-background-size: cover;
 }
 #intro .introtxt {
-    padding-top: 40vh;
+    padding-top: 250px;
     text-align: center;
 }
 #intro .introtxt h1 {
@@ -463,6 +462,8 @@ Media Queries
 ============================*/
 
 /* xs < 768 */
+
+/*
 @media screen and (max-width: 767px) {
 
 
@@ -510,8 +511,11 @@ Media Queries
     }
     
 }
+*/
 
 /* sm */
+
+/*
 @media screen and (min-width: 768px) {
     h1 { font-size: 2.2em; line-height: 58px; }
     h2 { font-size: 1.7em; line-height: 46px; }
@@ -551,8 +555,11 @@ Media Queries
         padding: 5px 15px;
     }
 }
+*/
 
 /* md */
+
+/*
 @media screen and (min-width: 992px) {
     h1 { font-size: 2.4em; line-height: 58px; }
     h2 { font-size: 1.9em; line-height: 46px; }
@@ -592,8 +599,11 @@ Media Queries
     }
     
 }
+*/
 
 /* lg */
+
+/*
 @media screen and (min-width: 1200px) {
     h1 { font-size: 2.4em; line-height: 58px; }
     h2 { font-size: 1.9em; line-height: 46px; }
@@ -610,16 +620,11 @@ Media Queries
     }
     
 }
+*/
 
 
 
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: @screen-md-min) {
-    #footer {
-        background-color: yellow;
-    }
-    .aboutwrap, .featurewrap, .ctabannerwrap, .testimonialwrap { margin: 0 auto; max-width: 90%; }
-}
+
 
 
 
