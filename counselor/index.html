@@ -240,15 +240,29 @@
                             <hr>
                         </div>
                         <div class="col-md-6 col-sm-12 col-xs-12">
-                            <form action="https://formspree.io/472krishna@gmail.com" method="POST">
-                                <input type="text" name="name" placeholder="Your Name" required>
-                                <input type="email" name="_replyto" placeholder="Your Email" required>
-                                <textarea name="message" placeholder="Your message here" rows="2" required></textarea>
-                                <!-- 
-                                <input type="hidden" name="_next" value="//site.io/thanks.html" />-->
-                                <input type="hidden" name="_subject" value="New submission!" />
-                                <input class="ct-btn" type="submit" value="Send">
-                            </form>
+                            <div class="form-group">
+                                <div class="col-md-12 col-xs-12">
+                                    <label class="control-label" for="name">Name</label>
+                                    <input name="name" class="form-control" placeholder="Enter Your Name" type="text">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-12 col-xs-12">
+                                    <label class="control-label" for="email">Email</label>
+                                    <input name="email" class="form-control" placeholder="Enter Your Email" type="text">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-12 col-xs-12">
+                                    <label class="control-label" for="msg">Message</label>
+                                    <textarea name="message" class="form-control" placeholder="Enter Your Message" rows="2" required></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    <button type="button" class="btn btn-primary btn-lg btn-block info">Submit</button>
+                                </div>
+                            </div>
                         </div>
                         <div class="col-md-6 col-sm-12 col-xs-12">
                             <div class="iframe-container">
