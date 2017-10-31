@@ -9,7 +9,6 @@ h4 { font-size: 1em; font-weight: bold;}
 /*
 Miscellenous
 ============================*/
-
 hr {
     border: 0;
     height: 3px;
@@ -39,6 +38,28 @@ a:visited { text-decoration: none; }
 .fa.fa-48 { font-size: 48px; }
 .material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
 .material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+.iframe-container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Ratio 16:9 ( 100%/16*9 = 56.25% ) */
+}
+.iframe-container > *{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+.iframe-container{
+    margin-bottom: 50px;
+    background: #eee;
+}
 
 /*
 Intro
