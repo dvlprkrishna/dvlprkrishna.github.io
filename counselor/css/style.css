@@ -108,8 +108,34 @@ About Media Queries
 
 
 /*
-Intro
+Expertise
 ============================*/
+#expertise {
+    padding: 50px 0;
+}
+#expertise .box {
+    margin-bottom: 50px;
+    padding: 0 13px;
+}
+#expertise img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+#expertise h3 {
+    color: #292929;
+    font-size: 1em;
+    margin-top: 0px;
+    font-weight: 700;
+}
+#expertise p {
+    font-size: 0.8em;
+    line-height: 24px;
+    color: #a0a0a0;
+    font-weight: 400;
+}
+#expertise .readmore {
+    font-weight: 600;
+}
 /*
 Intro
 ============================*/
