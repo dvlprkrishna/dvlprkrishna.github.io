@@ -5,6 +5,41 @@ body {
 }
 
 h2 { font-size: 1.9em; line-height: 46px; }
+h4 { font-size: 1em; font-weight: bold;}
+/*
+Miscellenous
+============================*/
+
+hr {
+    border: 0;
+    height: 3px;
+    width: 100px;
+    /*    background: #FABB05; */
+    background: #B92B27;
+    margin: 22px 0 60px;
+}
+
+a { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:focus { text-decoration: none; }
+a:visited { text-decoration: none; }
+
+.wt-400 { font-weight: 400; }
+.wt-600 { font-weight: 600; }
+.wt-bold { font-weight: bold; }
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+.fa.fa-18 { font-size: 18px; }
+.fa.fa-24 { font-size: 24px; }
+.fa.fa-36 { font-size: 36px; }
+.fa.fa-48 { font-size: 48px; }
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
 /*
 Intro
 ============================*/
@@ -136,9 +171,28 @@ Expertise
 #expertise .readmore {
     font-weight: 600;
 }
+
 /*
-Intro
+CTA Banner
 ============================*/
+#ctabanner {
+    padding: 30px 0;
+    background-color: #f4f7f8;
+}
+#ctabanner .content {
+    font-size: 0.8em;
+    line-height: 24px;
+    text-align: left;
+}
+#ctabanner .box .content {
+    display: inline-block;
+}
+#ctabanner .box span {
+    float: left;
+    padding-right: 15px;
+    padding-top: 10px;
+}
+
 /*
 Intro
 ============================*/
