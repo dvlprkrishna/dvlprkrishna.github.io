@@ -1,0 +1,123 @@
+body {
+    font-family: 'Open Sans', helvetica, sans-serif;
+    font-style: normal;
+    font-size: 20px;
+}
+
+h2 { font-size: 1.9em; line-height: 46px; }
+/*
+Intro
+============================*/
+#intro {
+    height: 100vh;
+    background: url(../img/library.jpg) center center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+}
+#intro .intro-text {
+    text-align: center;
+    padding-top: 40%;
+}
+#intro .intro-text h1 {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 2.4em;
+    font-weight: 100;
+    font-style: italic;
+    color: #FFF700;
+}
+#intro .intro-text p {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2em;
+    color: #f9f9f9;
+}
+
+/*
+Intro Media Queries
+============================*/
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    #intro .intro-text {
+        text-align: center;
+        padding-top: 30%;
+    }
+    #intro .intro-text h1 {
+        font-size: 3.4em;
+    }
+    #intro .intro-text p {
+        font-family: 'Playfair Display', serif;
+        font-size: 1.6em;
+        color: #f9f9f9;
+    }
+}
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    #intro .intro-text {
+        text-align: center;
+        padding-top: 24%;
+    }
+    #intro .intro-text h1 {
+        font-size: 4.4em;
+    }
+    #intro .intro-text p {
+        font-family: 'Playfair Display', serif;
+        font-size: 2em;
+        color: #f9f9f9;
+    }
+}
+
+
+/*
+About
+============================*/
+#about {
+    border-top: 6px solid #ddd;
+    background-color: #f4f7f8;
+    padding: 80px 0;
+}
+#about p {
+    text-align: justify;
+    font-size: 1.4em;
+    margin-bottom: 20px;
+}
+#about strong {
+    color: #B92B27;
+}
+/*
+About Media Queries
+============================*/
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    #about p {
+        font-size: 1.2em;
+    }
+}
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    #about p {
+        font-size: 1.2em;
+    }
+}
+
+
+/*
+Intro
+============================*/
+/*
+Intro
+============================*/
+/*
+Intro
+============================*/
+/*
+Intro
+============================*/
+/*
+Intro
+============================*/
+/*
+Intro
+============================*/
+/*
+Intro
+============================*/
