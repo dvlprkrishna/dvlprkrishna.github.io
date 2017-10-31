@@ -206,5 +206,31 @@ Intro
 Intro
 ============================*/
 /*
-Intro
+Footer
 ============================*/
+#footer {
+    border-top: 6px solid #ddd;
+    padding: 40px 0;
+    position: relative;
+    background: #111;
+}
+#footer a {
+    color: white;
+    transition: all .5s;
+}
+#footer a:hover {
+    transition: all .5s;
+    color: #ddd;
+    color: rgba(221, 221, 221, 0.51);
+}
+#footer .social {
+    padding-top: 25px;
+}
+#footer .social li {
+    padding: 0 10px;
+}
+#footer p {
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
