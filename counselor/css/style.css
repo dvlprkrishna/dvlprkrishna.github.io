@@ -82,6 +82,7 @@ About
 }
 #about strong {
     color: #B92B27;
+    font-size: 1.2em;
 }
 /*
 About Media Queries
@@ -91,11 +92,17 @@ About Media Queries
     #about p {
         font-size: 0.9em;
     }
+    #about strong {
+        font-size: 1.1em;
+    }
 }
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
     #about p {
         font-size: 1em;
+    }
+    #about strong {
+        font-size: 1.2em;
     }
 }
 
