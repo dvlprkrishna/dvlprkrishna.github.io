@@ -37,8 +37,12 @@ p {
         font-weight: 400;
     }
     p {
-        font-size: 1.2em;
+        font-size: 1.1em;
         font-weight: 300;
+    }
+    .sectionwrap {
+        width: 95%;
+        margin: 0 auto;
     }
 }
 
