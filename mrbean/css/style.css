@@ -65,6 +65,9 @@ Intro
     width: 45%;
     margin: 0 auto;
 }
+#intro .bt-app {
+    padding-right: 20px;
+}
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
     #intro p {
