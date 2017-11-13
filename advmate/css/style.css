@@ -1,0 +1,102 @@
+/*
+General Css
+============================*/
+body {
+    font-family: 'Open Sans', helvetica, sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: normal;
+    font-smoothing: antialiased;
+    -mox-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+a { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+a:visited { text-decoration: none; }
+
+p { font-size: 1.2em; }
+
+
+.adv-btn {
+    background-color: #6071d5;
+    border: 2px solid #6071d5;
+    border-radius: 4px;
+    color: #fff;
+    display: inline-block;
+    padding: 8px 20px;
+    margin: 0px 10px 10px 0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+.adv-btn:hover {
+    color: #f7f7f7;
+    opacity: 0.7;
+}
+/*
+Intro
+============================*/
+#intro {
+    height: 100vh;
+    padding-top: 12%;
+    background-color: #000;
+    background-image: url(../img/gettyimg.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    color: #fff;
+    box-shadow: -10px -2px 12px 0px rgba( 0, 0, 0,0.9);
+    height: 100vh;
+}
+#intro .introwrap { margin: 0 auto; max-width: 75%; }
+#intro:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;/*
+    background-image: linear-gradient(to bottom right, #002f4b, #dc4225);
+    */
+    background: #093028;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #237A57, #093028);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #237A57, #093028); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    opacity: .6;
+}
+#intro h1 {
+    font-size: 2.8em;
+    font-weight: 300;
+    line-height: 68px;
+}
+#intro p {
+    color: #90a1b8;
+    font-size: 2.2em;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+/*
+Intro Media Queries
+============================*/
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    #intro p {
+        font-size: 1.6em;
+    }
+}
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    
+}
+/*
+About
+============================*/
+
+
+
+
+
+
+
+
+
+
