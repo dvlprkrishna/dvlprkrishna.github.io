@@ -70,7 +70,6 @@ Intro
 }
 #intro p {
     color: #90a1b8;
-    font-size: 2.2em;
     font-weight: 300;
     margin-bottom: 40px;
 }
@@ -80,12 +79,14 @@ Intro Media Queries
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
     #intro p {
-        font-size: 1.6em;
+        font-size: 2em;
     }
 }
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-    
+    #intro p {
+        font-size: 2.2em;
+    }
 }
 /*
 About
