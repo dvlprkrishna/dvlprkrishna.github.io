@@ -78,15 +78,13 @@ Intro Media Queries
 ============================*/
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-    #intro p {
-        font-size: 2em;
-    }
+    #intro h1 { font-size: 2.4em; }
+    #intro p { font-size: 2em; }
 }
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-    #intro p {
-        font-size: 2.2em;
-    }
+    #intro h1 { font-size: 2.6em; }
+    #intro p { font-size: 2.2em; }
 }
 /*
 About
