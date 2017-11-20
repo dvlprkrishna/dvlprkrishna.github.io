@@ -163,7 +163,7 @@ Sitta
     height: 100vh;
     color: #797979;
     background: url(../img/sitta.jpg) center center no-repeat;
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-size: cover;
     -webkit-background-size: cover;
 }
