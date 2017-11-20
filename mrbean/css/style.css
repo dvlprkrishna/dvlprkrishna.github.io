@@ -144,7 +144,43 @@ Section Two
 /*
 Sitta
 ========================*/
-
+#sitta {
+    height: 100vh;
+    color: #797979;
+    background: url(../img/sitta.jpg) center center no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    -webkit-background-size: cover;
+}
+#sitta .cst-text {
+    width: 30%;
+    margin-top: 5%;
+}
+#sitta .cst-text h1 {
+    font-size: 2.9em;
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+#sitta .cst-text p.tagline {
+    font-size: 2em;
+    line-height: 46px;
+    font-weight: 400;
+}
+#sitta .cst-text p.desc {
+    font-size: 1.2em;
+    line-height: 28px;
+    font-weight: normal;
+    margin-top: 20%;
+    margin-bottom: 0px;
+}
+#sitta .cst-cta a {
+    color: #797979;
+}
+#sitta .cst-cta .fa {
+    font-size: 2em;
+    line-height: 40px;
+    vertical-align: middle;
+}
 #sitta .cst-cta p {
     padding-top: 10px;
     padding-left: 10px;
@@ -153,46 +189,6 @@ Sitta
     line-height: 46px;
     font-weight: 400;
     display: inline-block;
-}
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
-    #sitta {
-        height: 100vh;
-        color: #797979;
-        background: url(../img/sitta.jpg) center center no-repeat;
-        background-attachment: scroll;
-        background-size: cover;
-        -webkit-background-size: cover;
-    }
-    #sitta .cst-text {
-        width: 30%;
-        margin-top: 5%;
-    }
-    #sitta .cst-text h1 {
-        font-size: 2.9em;
-        font-weight: 500;
-        margin-bottom: 0px;
-    }
-    #sitta .cst-text p.tagline {
-        font-size: 2em;
-        line-height: 46px;
-        font-weight: 400;
-    }
-    #sitta .cst-text p.desc {
-        font-size: 1.2em;
-        line-height: 28px;
-        font-weight: normal;
-        margin-top: 20%;
-        margin-bottom: 0px;
-    }
-    #sitta .cst-cta a {
-        color: #797979;
-    }
-    #sitta .cst-cta .fa {
-        font-size: 2em;
-        line-height: 40px;
-        vertical-align: middle;
-    }
 }
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
