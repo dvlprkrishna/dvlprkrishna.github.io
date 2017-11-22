@@ -1,0 +1,156 @@
+/*
+General 
+===================*/
+body {
+    font-family: 'Roboto', helvetica, arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: #333;
+    font-smoothing: antialiased;
+    -mox-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+/*
+left 
+===================*/
+.left {
+    height: 100vh;
+    background-attachment: fixed;
+    background: url(../img/redrockslight.png) top left no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.bio {
+    position: absolute;
+    bottom: 60px;
+    left: 60px;
+    color: white;
+}
+.bio .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: 3px solid #ddd;
+}
+.bio .name {
+    margin-top: 20px;
+    font-size: 1.8em;
+    margin-bottom: 0px;
+}
+.bio .qual {
+    letter-spacing: 1px;
+    font-size: 0.8em;
+    margin-bottom: 0px;
+}
+/*
+right 
+===================*/
+.right {
+    margin-top: 60px;
+}
+.right .heading {
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #6071d5;
+}
+.right .cvtxt {
+    font-weight: 400;
+    color: rgba(0,0,0,0.7);
+}
+#about, #edu, #project, #skill, #contact {
+    margin: 0 40px 30px;
+}
+/*
+Education
+===================*/
+#edu .cvtxt {
+    margin-bottom: 14px;
+}
+#edu .university {
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+#edu .degree {
+    font-size: 0.9em;
+    margin-bottom: 0px;
+}
+#edu .year {
+    font-size: 0.8em;
+    margin-bottom: 0px;
+    font-weight: 400;
+    font-style: italic;
+}
+/*
+Projects
+===================*/
+#project a {
+    color: rgba(0,0,0,0.7);
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-decoration: none;
+}
+#project a:hover {
+    color: #6071d5;
+}
+#project .desc {
+    font-size: 0.9em;
+}
+/*
+Contact
+===================*/
+#contact ul {
+    list-style: none;
+    padding-left: 0;
+}
+#contact li a {
+    color: rgba(0,0,0,0.7);
+    text-decoration: none;
+}
+#contact a:hover {
+    color: #6071d5;
+}
+/*
+Footer
+===================*/
+#footer {
+    background-color: #fafafa;
+    color: #8a8a8a;
+    padding: 24px;
+    text-align: right;
+    margin-bottom: 0px;
+}
+#footer a {
+    font-size: 0.8em;
+    color: #8a8a8a;
+    text-decoration: none;
+}
+/*
+Top
+===================*/
+#top {
+    height: 300px;
+    background-attachment: fixed;
+    background: url(../img/redrockslight.png) top left no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#top .top-bio {
+    position: absolute;
+    bottom: 60px;
+    left: 60px;
+    right: 60px;
+    top: 60px;
+    color: white;
+}
+#top .top-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: 3px solid #ddd;
+}
+#top .top-avatar {
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
