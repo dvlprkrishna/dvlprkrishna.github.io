@@ -66,6 +66,7 @@ right
     #about, #edu, #project, #skill, #contact {
         margin: 0 10px 30px;
     }
+    
 }
 /*
 Education
@@ -149,6 +150,15 @@ Top
     right: 60px;
     top: 60px;
     color: white;
+}
+#top .top-name {
+    font-size: 1.6em;
+    margin-bottom: 0px;
+}
+#top .top-qual {
+    letter-spacing: 1px;
+    font-size: 0.8em;
+    margin: 4px auto 0px;
 }
 #top .top-avatar {
     width: 100px;
