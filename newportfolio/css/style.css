@@ -84,12 +84,9 @@ Project
 .yellow {
     background-color: #ffe100;
 }
-
-#project .iphonewrap {
-    margin: 0 auto;
-}
 #project .iphonewrap img {
-    max-height: 600px;
+    max-height: 500px;
+    margin: 80px auto;
 }
 
 /*
