@@ -1,0 +1,142 @@
+body {
+    background-color: #F4F3F3;
+    color: #4a4a4a;
+    font-size: 20px;
+    font-smoothing: antialiased;
+    -mox-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+/*
+Left column
+=================*/
+#left {
+    height: 100vh;
+    background-attachment: fixed;
+    background: url(../img/redrockslight.jpg) top left no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#left .wrapper-left {
+    position: absolute;
+    color: #fafafa;
+    bottom: 60px;
+    left: 60px;
+}
+#left .avatar {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 3px solid #ddd;
+}
+/*
+Right column
+=================*/
+
+/*
+Intro / Contact
+=================*/
+#intro, #contact {
+    height: 100vh;
+}
+#intro .intro-text, #contact .contact-text {
+    font-family: 'Hind Madurai', 'Helvetica Neue', Helvetica, sans-serif;
+    margin: 250px 80px 0;
+}
+#intro .intro-text h1, #contact .contact-text h1 {
+    font-size: 1.8em;
+    font-weight: 700;
+    line-height: 48px;
+}
+/*
+Social icons
+=================*/
+#intro .social {
+    margin: 20px auto;
+}
+#intro .social a{
+    text-decoration: none;
+    margin-right: 12px;
+    color: #C1C1C1;
+}
+#intro .social a.tw:hover {
+    color: #1da1f2;
+}
+#intro .social a.gi:hover {
+    color: #333333;
+}
+#intro .social a.li:hover {
+    color: #0077b5;
+}
+#intro .social a.in:hover {
+    color: #e1306c;
+}
+/*
+Project
+=================*/
+#project {
+    height: 100vh;
+}
+.blue {
+    background-color: #76daff;
+}
+.yellow {
+    background-color: #ffe100;
+}
+
+#project .iphonewrap {
+    margin: 0 auto;
+}
+#project .iphonewrap img {
+    max-height: 600px;
+}
+
+/*
+Contact links
+=================*/
+#contact ul {
+    padding-left: 0px;
+}
+#contact li a, a.mail {
+    color: #4a4a4a;
+    text-decoration: none;
+    margin-bottom: 2px;
+    border-bottom: 2px solid #a0a0a0;
+}
+#contact a.mobile {
+    color: #4a4a4a;
+    line-height: 28px;
+    text-decoration: none;
+    margin-top: 12px;
+}
+#contact li a.tw:hover{
+    border-bottom: 2px solid #1da1f2;
+    color: #1da1f2;
+}
+#contact li a.gi:hover {
+    border-bottom: 2px solid #333333;
+    color: #333333;
+}
+#contact li a.li:hover {
+    border-bottom: 2px solid #0077b5;
+    color: #0077b5;
+}
+#contact li a.in:hover {
+    border-bottom: 2px solid #e1306c;   
+    color: #e1306c;
+}
+#contact a.mail, a.mobile {
+    margin-left: 5px;
+}
+#contact a.mail:hover {
+    border-bottom: 2px solid #08851b;
+    color: #08851b;
+}
+
+
+
+
+
+
+
