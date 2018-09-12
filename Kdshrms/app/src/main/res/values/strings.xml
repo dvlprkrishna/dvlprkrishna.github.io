@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Knoc Door Services</string>
+    <string name="app_loadingText">Loading Please wait...</string>
+</resources>
