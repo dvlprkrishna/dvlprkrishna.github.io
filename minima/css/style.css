@@ -1,0 +1,633 @@
+/* ===========================================
+global 
+========================================================================== */
+
+body {
+    color: #555;
+    font-family: 'Open Sans', helvetica, arial, sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.4;
+}
+h1 {
+    font-size: 2.4em;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.8em;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.2;
+}
+
+h3 {
+    font-size: 1.3em;
+    line-height: 1;
+    font-weight: bold;
+}
+h4 {
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+ul {
+    font-size: 0.8em;
+    font-weight: normal;
+    line-height: 1.4em;
+}
+
+small {
+    font-size: 0.6em;
+    font-weight: normal;
+    line-height: 1.2em;
+}
+
+/* 
+small {
+    font-size: 0.8em;
+    line-height: 22px;
+}
+
+blockquote {
+    font-size: 1.4em;
+    font-style: italic;
+    font-weight: normal;
+    line-height: 42px;
+}
+
+caption {
+    font-size: 0.7em;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+notification {
+    font-size: 0.8em;
+    font-weight: normal;
+    line-height: 22px;
+}
+
+notification bold {
+    font-size: 0.8em;
+    font-weight: bold;
+    line-height: 22px;
+}
+
+notification button {
+    font-size: 0.6em;
+    font-weight: 600;
+    line-height: 34px;
+}
+*/
+
+hr {
+    background: #eee;
+    border: 0;
+    height: 5px;
+    width: 4em;
+    text-align: center;
+}
+
+section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+/* ==========================================================================
+dot nav section
+========================================================================== */
+.dotnav-right {
+    right: 10px;
+    top: 50%;
+    margin-top: -50px;
+    height: 100px;
+    z-index: 999;
+    position: fixed;
+}
+
+.dotnav {
+    padding: 0;
+    list-style: none;
+    font-size: 0.001px;
+}
+
+.dotnav > li {
+    display: inline-block;
+    font-size: 1rem;
+    vertical-align: top;
+}
+.dotnav > li:nth-child(n+2) {
+    margin-left: 15px;
+}
+
+.dotnav > li > a {
+    display: inline-block;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid #66ccff;
+    vertical-align: top;
+    overflow: hidden;
+    padding: 0;
+    text-indent: -999%;
+}
+.dotnav > li > a:hover,
+.dotnav > li > a:focus {
+    background: #66ccff;
+    outline: none;
+}
+.dotnav > li > a:active {
+    background: #66ccff;
+}
+.dotnav > li.active > a {
+    background: #66ccff;
+}
+.dotnav-vertical > li {
+    display: block;
+    margin-right:10px;
+}
+.dotnav-vertical > li:nth-child(n+2) {
+    margin-left: 0;
+    margin-top: 10px;
+}
+
+/* ================ 
+.tooltip.right, .tooltip.top, .tooltip.left,
+=================== */
+
+.tooltip-inner{
+    background-color: #00acd6;
+}
+.tooltip.left .tooltip-arrow {
+    border-left-color: #00acd6;
+}
+
+
+/* ==========================================================================
+.tooltip.right .tooltip-arrow {
+    border-left-color: #00acd6;
+}
+
+.tooltip.top .tooltip-arrow {
+    border-left-color: #00acd6;
+}
+
+.tooltip.bottom .tooltip-arrow {
+    border-left-color: #00acd6;
+}
+========================================================================== */
+
+
+
+
+
+/* ==============================================================
+============
+Intro section
+========================================================================== */
+#intro, #error {
+    height: 100vh;
+    padding-top: 200px;
+    text-align: center;
+}
+
+#intro p, #error p {
+    color: #a0a0a0;
+    margin: 30px auto;
+    max-width: 50%;
+}
+
+/* ==========================================================================
+Custom Button section
+========================================================================== */
+#error .mm-btn {
+    margin: 0;
+}
+
+.mm-btn, #contact .mm-btn {
+    display: inline-block;
+    border: 2px solid #6071d5;
+    border-radius: 3px;
+    padding: 8px 20px;
+    margin: 0 10px 10px 0;
+    font-size: 1em;
+    transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    
+}
+
+.mm-btn:hover, .mm-btn:focus, #contact .mm-btn:hover, #contact .mm-btn:focus {
+    background-color: #6071d5;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* ==========================================================================
+Feature section
+========================================================================== */
+#features span i {
+    float: left;
+    color: #3e3e3f;
+    margin: 18px 10px 0 0;
+}
+
+#features .content {
+    margin: 0 0 40px 100px;
+    overflow: hidden;
+    text-align: left;
+}
+
+#features p {
+    font-size: 1em;
+    line-height: 1.4;
+    color: #a0a0a0;
+}
+
+/* ==========================================================================
+About section
+========================================================================== */
+#about .about-content {
+    max-width: 40em; /* 800px */
+    margin: 2em auto;
+    
+}
+
+#about h3 {
+    font-size: 1.5em;
+}
+
+
+/* ==========================================================================
+Testimonial section
+========================================================================== */
+/*
+.quotebox {
+    background: url(../img/quote.svg) no-repeat 0 0;
+    padding: 26px;
+    margin: 26px auto;
+}
+
+#testimonial blockquote {
+    border: 0;
+    margin: 0 0 12px;
+}
+
+#testimonial blockquote p {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#testimonial cite img {
+    margin-left: 20px;
+}
+
+#testimonial cite small strong a {
+    cursor: pointer;
+    color: #a0a0a0;
+    margin-left: 16px;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+}
+*/
+
+.muted-text {
+    color: #a0a0a0;
+    font-size: 1em;
+}
+
+.quotebox {
+    padding: 26px;
+    margin: 26px auto;
+}
+
+#testimonial blockquote {
+    border: 0;
+    margin: 0 0 12px;
+}
+#testimonial blockquote p {
+    font-size: 18px;
+    font-weight: 600;
+}
+#testimonial cite small strong a {
+    font-style: normal;
+    font-weight: bold;
+    color: #555;
+    margin-right: 30px;
+}
+
+
+/* ==========================================================================
+Faq section
+========================================================================== */
+
+#faq {
+    transition: all 0.9s;
+    -moz-transition: all 0.9s;
+    -webkit-transition: all 0.9s;
+}
+#faq .faqwrap {
+    max-width: 800px;
+    margin: 20px auto;
+}
+#faq h4 {
+    display: inline-block;
+    cursor: pointer;
+    font-weight: bold;
+}
+#faq p {
+    margin-left: 15px;
+    padding : 20px;
+    color: #a0a0a0;
+    font-size: 18px;
+    line-height: 24px;
+}
+#faq ul {
+    list-style: none;
+}
+#faq li {
+    border-top: 2px solid #ebebeb;
+}
+
+#faq .ans6 {
+    border-bottom: 2px solid #ebebeb;
+}
+
+#faq .fa {
+    display: inline-block;
+    padding-right: 20px;
+}
+
+
+
+/* ==========================================================================
+Work section
+========================================================================== */
+#work .workimg {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: relative;
+}
+
+#work-content{
+    top: 14px;
+    opacity:0;
+    position: absolute;
+    width: 90%; 
+  color:#fff;
+  background-color:rgba(0,0,0,.3);
+   -webkit-transition: all 0.9s ease-in; 
+     -moz-transition: all  0.9s ease-in; 
+       -o-transition: all  0.9s ease-in;  
+          transition: all  0.9s ease-in; 
+}
+
+.workimg:hover #work-content{
+   opacity:1;
+}
+
+#work-content p {
+    
+    padding: 28px;
+}
+
+
+
+/* ==========================================================================
+Pricing section
+========================================================================== */
+#pricing h3 {
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 30px;
+    margin: 10px auto;
+}
+
+#pricing h4 {
+    color: #6071d5;
+    font-size: 1.9em;
+    line-height: 32px;
+    font-weight: bold;
+}
+
+#pricing small {
+    font-size: 0.7em;
+    line-height: 1.9em;
+}
+
+#pricing a {
+    text-decoration: none;
+    color: #6071d5;
+}
+
+#pricing .pricewrap {
+    margin: 40px auto;
+    max-width: 900px;
+    text-align: center;
+}
+
+#pricing .pricebox {
+    border: 2px solid #e1e4e8;
+}
+
+#pricing .heading, .signup {
+    display: block;
+    padding: 10px 16px;
+}
+
+#pricing .heading {
+    border-bottom: 2px solid #e1e4e8;
+}
+
+#pricing .signup {
+    border-top: 2px solid #e1e4e8;
+}
+
+#pricing .signup:hover {
+    color: #fff;
+    background: #6071d5;
+}
+
+#pricing .green {
+    color: #28a745;
+}
+
+#pricing .greenblock {
+    border-top: 2px solid #e1e4e8;
+    color: #28a745;
+    display: block;
+    padding: 10px 16px;
+}
+
+#pricing .greenblock:hover {
+    color: #ffffff;
+    background: #28a745;
+}
+
+#pricing strong {
+    font-size: 14px;
+    padding: 5px 20px;
+    position: absolute;
+    top: -15px;
+    color: #fff;
+    background-color: #28a745;
+    transform: translate(-50%,0);
+    -webkit-transform: translate(-50%,0);
+    -moz-transform: translate(-50%,0);
+    -ms-transform: translate(-50%,0);
+    -o-transform: translate(-50%,0);
+}
+
+#pricing .priceinfo {
+    padding: 12px 24px;
+}
+
+#pricing ul {
+    list-style: none;
+    text-align: left;
+    padding-left: 0px;
+    margin: 14px auto;
+}
+
+#pricing .fa {    
+    margin-right: 10px;
+    color: #6071d5;
+}
+
+#pricing .fa-dollar {
+    color: #555;
+}
+
+#pricing .fa-times {
+    margin-right: 13px;
+    color: #a0a0a0;
+}
+
+/* ==========================================================================
+Footer section
+========================================================================== 
+#footer {
+    padding: 3em 0;
+}
+
+#footer ul {
+    width: 14em;
+    display: block;
+    margin: 0 auto;
+}
+#footer ul a {
+    color: #a0a0a0;
+}
+
+#footer ul a:hover {
+    color: #b2b2b2;
+    opacity: 0.35;
+}
+
+#footer small {
+    margin-top: 20px;
+    font-size: 0.6em;
+}
+*/
+
+#footer {
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 10px;
+}
+#footer ul {
+    display: block;
+    margin: 0 auto;
+}
+#footer ul a {
+    color: #a0a0a0;
+}
+#footer ul a:hover {
+    opacity: 0.35;
+}
+#footer small a, a:hover {
+    color: #a0a0a0;
+    text-decoration: none;
+}
+#footer small {
+    color: #a0a0a0;
+    font-size: 0.6em;
+}
+#footer small .logo {
+    display: inline-block;
+    font-weight: bold;
+}
+
+/* ==========================================================================
+contact section
+========================================================================== */
+#contact {
+    padding-top: 10px;
+}
+
+#contact .contact-wrap {
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+#contact button {
+    font-size: 1em;
+    background-color: transparent;
+    color: #6071d5;
+}
+
+
+#contact .contact-wrap input,#contact .contact-wrap  textarea {
+    border-radius: 3px;
+    min-width: 50px;
+    max-width: 600px;
+    background-color: #ffffff;
+    margin: 0 0 24px 0;
+    border: 2px solid #c9c9c9;
+}
+
+#contact input {
+    width: 100%;
+}
+
+
+/* ==========================================================================
+Miscellenous section
+========================================================================== */
+.topcta {
+    font-size: 0.8em;
+    margin-top: 10px;
+}
+.topcta a{
+    color: #a0a0a0;
+    text-decoration: none;
+}
+.topcta a:focus {
+    text-decoration: none;
+    opacity: 0.35;
+}
+
+.topcta a:hover {
+    text-decoration: none;
+    opacity: 0.35;
+}
+
+
+
+
+
+
+
+
