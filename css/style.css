@@ -12,6 +12,8 @@ body {
     font-size: 20px;
     -webkit-font-smoothing: antialiased;
 }
+::-moz-selection { background: #D1EDFF; }
+::selection { background: #D1EDFF; }
 section {
     display: flex;
     align-items: center;
@@ -64,4 +66,96 @@ ul .gm:hover {
 }
 ul .li:hover {
     color: #0077b5;
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    html, body {
+        font-family: 'Open Sans', Helvetica, sans-serif;;
+        background-color: #1F1F1F;
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        font-family: 'Open Sans', Helvetica, sans-serif;;
+        background-color: #1F1F1F;
+        color: #FFFFFF;
+        letter-spacing: 0.8px;
+        font-size: 16px;
+        -webkit-font-smoothing: antialiased;
+    }
+    section .container {
+        max-width: 786px;
+    }
+    p {
+        font-weight: 400;
+        font-size: 1em;
+        line-height: 32px;
+    }
+}
+/* Mobile / Tablets */
+@media only screen and (max-width : 768px) {
+    html, body {
+        font-family: 'Open Sans', Helvetica, sans-serif;;
+        background-color: #1F1F1F;
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        font-family: 'Open Sans', Helvetica, sans-serif;;
+        background-color: #1F1F1F;
+        color: #FFFFFF;
+        letter-spacing: 0.8px;
+        font-size: 14px;
+        -webkit-font-smoothing: antialiased;
+    }
+    section .container {
+        max-width: 499px;
+    }
+    h1 {
+        font-weight: lighter;
+        font-size: 2.8em;
+        margin-bottom: 0;
+    }
+    p {
+        font-weight: 400;
+        font-size: 1em;
+        line-height: 26px;
+    }
+    ul li {
+        margin-top: 16px;
+    }
+}
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+    html, body {
+        font-family: 'Open Sans', Helvetica, sans-serif;;
+        background-color: #1F1F1F;
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        font-family: 'Open Sans', Helvetica, sans-serif;;
+        background-color: #1F1F1F;
+        color: #FFFFFF;
+        letter-spacing: 0.8px;
+        font-size: 12px;
+        -webkit-font-smoothing: antialiased;
+    }
+    section .container {
+        max-width: 320px;
+    }
+    h1 {
+        font-weight: lighter;
+        font-size: 2.6em;
+        margin-bottom: 0;
+    }
+    p {
+        font-weight: 400;
+        font-size: 1em;
+        line-height: 22px;
+    }
+    ul li {
+        margin-top: 10px;
+    }
 }
