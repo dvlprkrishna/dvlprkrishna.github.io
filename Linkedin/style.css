@@ -1,0 +1,27 @@
+.bg-linkedin {
+	background-color: #283E4A;
+}
+.input-bg {
+	background-color: #E1E9EE;
+}
+body {
+
+}
+.left , .right {
+	display: flex!important;
+}
+i {
+	display: block!important;
+	margin: 0 auto!important;height: 24px;
+    width: 24px;
+}
+
+.fas {
+	
+
+    
+    color: #c7d1d8;
+    left: auto;
+    top: auto;
+    margin-left: 0;
+}
