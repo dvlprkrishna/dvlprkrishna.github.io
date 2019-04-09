@@ -8,34 +8,84 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title></title>
+    <title>Hello, world!</title>
+
+    <style type="text/css">
+      li {
+        display: inline-block;
+      }
+      .fas {
+        display: block;
+      }
+      a {
+        text-decoration: none;
+        text-transform: capitalize;
+      }
+      .title {
+        font-size: 1.2rem;
+        line-height: 1.33333;
+        display: block;
+        color: #c7d1d8;
+        font-weight: 400;
+        transition: color .3s;
+      }
+      .fas {
+        display: inline-block;
+        height: 24px;
+        width: 24px;
+        color: #c7d1d8;
+        opacity: 1;
+      }
+      a.navbar-brand {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin-bottom: 0;
+        height: 34px!important;
+        width: 34px!important;
+      }
+      .fa-linkedin {
+        color: #0077B5;
+        background-color: whitesmoke;
+        
+        font-size: 40px;
+      }
+      li a {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: 44px;
+        line-height: 1;
+        margin-top: auto;
+        width: 100%;
+      }
+    </style>
   </head>
   <body>
-    <header class="header-color">
-      <nav class="navbar justify-content-between align-items-baseline navbar-light bg-linkedin">
-        
-        <div class="left justify-content-start">
-          <a class="navbar-brand" href="#">
-            <img src="https://getbootstrap.com/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="logo">
-          </a>
-          <form class="form-inline">
-            <input class="form-control input-bg float-left sm-2" type="search" placeholder="Search" aria-label="Search">
-          </form>
-        </div>
-        <div class="right">
-          <ul class="list-inline">
-            <li class="list-inline-item"><a class="nav-link active" href="#"><span class="fas fa-home"></span>Active</a></li>
-            <li class="list-inline-item"><a class="nav-link active" href="#">Active</a></li>
-            <li class="list-inline-item"><a class="nav-link active" href="#">Active</a></li>
-            <li class="list-inline-item"><a class="nav-link active" href="#">Active</a></li>
-            <li class="list-inline-item"><a class="nav-link active" href="#">Active</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+    <nav class="navbar navbar-dark bg-dark justify-content-start">
+      <!-- Navbar content -->
+      <!-- <a class="navbar-brand" href="#!"><img src="https://place-hold.it/34x34"></a> -->
+      <a class="navbar-brand" href="#!"><span class="icon fab fa-linkedin"></span></a>
+      <form class="form-inline">
+        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+      </form>
+      <ul>
+        <li><a href="#"><span class="icon fas fa-home"></span><span class="title">Home</span></a></li>
+        <li><a href="#"><span class="icon fas fa-user-friends"></span><span class="title">Network</span></a></li>
+        <li><a href="#"><span class="icon fas fa-briefcase"></span><span class="title">Jobs</span></a></li>
+        <li><a href="#"><span class="icon fas fa-comments"></span><span class="title">Messaging</span></a></li>
+        <li><a href="#"><span class="icon fas fa-bell"></span><span class="title">Notification</span></a></li>
+      </ul>
 
 
+    </nav>
+
+
+    <!-- Section -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col"></div>
+      </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
