@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -8,84 +9,48 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <title>Hello, world!</title>
-
-    <style type="text/css">
-      li {
-        display: inline-block;
-      }
-      .fas {
-        display: block;
-      }
-      a {
-        text-decoration: none;
-        text-transform: capitalize;
-      }
-      .title {
-        font-size: 1.2rem;
-        line-height: 1.33333;
-        display: block;
-        color: #c7d1d8;
-        font-weight: 400;
-        transition: color .3s;
-      }
-      .fas {
-        display: inline-block;
-        height: 24px;
-        width: 24px;
-        color: #c7d1d8;
-        opacity: 1;
-      }
-      a.navbar-brand {
-        padding-top: 0px;
-        padding-bottom: 0px;
-        margin-bottom: 0;
-        height: 34px!important;
-        width: 34px!important;
-      }
-      .fa-linkedin {
-        color: #0077B5;
-        background-color: whitesmoke;
-        
-        font-size: 40px;
-      }
-      li a {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        height: 44px;
-        line-height: 1;
-        margin-top: auto;
-        width: 100%;
-      }
-    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title></title>
   </head>
   <body>
-    <nav class="navbar navbar-dark bg-dark justify-content-start">
-      <!-- Navbar content -->
-      <!-- <a class="navbar-brand" href="#!"><img src="https://place-hold.it/34x34"></a> -->
-      <a class="navbar-brand" href="#!"><span class="icon fab fa-linkedin"></span></a>
-      <form class="form-inline">
-        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-      </form>
-      <ul>
-        <li><a href="#"><span class="icon fas fa-home"></span><span class="title">Home</span></a></li>
-        <li><a href="#"><span class="icon fas fa-user-friends"></span><span class="title">Network</span></a></li>
-        <li><a href="#"><span class="icon fas fa-briefcase"></span><span class="title">Jobs</span></a></li>
-        <li><a href="#"><span class="icon fas fa-comments"></span><span class="title">Messaging</span></a></li>
-        <li><a href="#"><span class="icon fas fa-bell"></span><span class="title">Notification</span></a></li>
-      </ul>
-
-
-    </nav>
-
-
-    <!-- Section -->
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col"></div>
+    <header class="header-color">
+      <nav class="navbar justify-content-between align-items-center navbar-light bg-linkedin">
+        <div class="left justify-content-start">
+          <a class="navbar-brand" href="#">
+            <img src="https://getbootstrap.com/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="logo">
+          </a>
+          <input id="search" class="form-control input-bg float-left" type="search" placeholder="Search" aria-label="Search">
+        </div>
+        <div class="right">
+          <ul class="list-inline">
+            <li class="list-inline-item"><a class="nav-link" href="#"><i class="fas fa-home"></i><span class="nav-title">Home</span></a></li>
+            <li class="list-inline-item"><a class="nav-link" href="#"><i class="fas fa-user-friends"></i><span class="nav-title">Network</span></a></li>
+            <li class="list-inline-item"><a class="nav-link" href="#"><i class="fas fa-briefcase"></i><span class="nav-title">Jobs</span></a></li>
+            <li class="list-inline-item"><a class="nav-link" href="#"><i class="fas fa-comments"></i><span class="nav-title">Messaging</span></a></li>
+            <li class="list-inline-item"><a class="nav-link" href="#"><i class="fas fa-bell"></i><span class="nav-title">Notification</span></a></li>
+            <li class="list-inline-item" style="border-right: 1px solid #ededed;"><a class="nav-link" href="#"><img class="bio-sm" src="./img/bio-sm.jpg"><span class="nav-title">Me <i class="fa fa-caret-down"></i></span></a></li>
+            <li class="list-inline-item"><a class="nav-link" href="#"><i class="fas fa-th"></i><span class="nav-title">Work <i class="fa fa-caret-down"></i></span></a></li>
+            <li class="list-inline-item nav-cta"><a class="nav-link" href="#"><span class="nav-title-extend">Try Premium Free <br>for 1 Month</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- Pagewrapper / Main -->
+    <section id="main">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-sm-12">
+            <a href="#" class="ad">
+              <span class="primary">Regain Control of DNS</span>
+              <p>&#00045; See What You Can Do to Protect Your DNS Traffic Today!</p>
+            </a>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

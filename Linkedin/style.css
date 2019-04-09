@@ -17,6 +17,9 @@ nav {
 .left , .right {
   display: flex!important;
 }
+.right {
+	margin-top: 8px;
+}
 i {
   color: #c7d1d8;
   display: block!important;
@@ -27,7 +30,7 @@ i {
 a.nav-link {
   padding: 0;
   height: 44px;
-  width: 80px;
+  width: 65px;
 }
 ul {
   margin-bottom: 0;
@@ -46,6 +49,7 @@ li {
 }
 img.bio-sm  {
   display: block;
+  margin: 0 auto;
   height: 24px;
   width: 24px;
   border: 1px solid #ededed;
@@ -71,6 +75,9 @@ span.nav-title-extend{
     text-align: center;
     transition: color .3s;
   width: 100px;
+}
+li.list-inline-item {
+	margin-right: 0;
 }
 li.nav-cta span.title{
   width: 100px;
