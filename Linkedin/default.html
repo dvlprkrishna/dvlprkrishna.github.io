@@ -65,7 +65,14 @@
                   <h5>Web Developer at Accenture</h5> 
                   <p class="location">Mumbai, Maharashtra, India</p>
                   <button type="button" class="btn cust-btn cust-primary-btn btn-primary">Add profile section&nbsp;&nbsp;&nbsp;<span class="fa fa-caret-down"></span></button>
-                  <button type="button" class="btn cust-btn cust-outline-btn btn-outline-primary">More...</button>
+<!--                   <button type="button" class="btn cust-btn cust-outline-btn btn-outline-primary">More...</button> -->
+                  <button type="button" class="btn cust-btn cust-outline-btn btn-outline-primary" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More...</button>
+                  
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#"><span class="fas fa-share"></span>&nbsp;&nbsp;&nbsp;Share Profile</a>
+                    <a class="dropdown-item" href="#"><span class="fas fa-download"></span>&nbsp;&nbsp;&nbsp;Save to PDF</a>
+                  </div>
+
                 </div>
                 <div class="col-sm-5 mt-3">
                   <ul class="list">
@@ -82,35 +89,7 @@
           </div>
 
 
-          <!-- Header Panel -->
-          <div class="card mb-3">
-            <img class="card-img-top" src="./img/header-bg.jpg" alt="Card image cap">
-            <!-- profile pic -->
-            <div class="profile-pic mx-3">
-              <img src="./img/bio-lg.jpg">
-            </div>
-            <div class="card-body">
-              <div class="row mt-5">
-                <div class="col-sm-7 mt-3">
-                  <h4>Krishna Sahu</h4> 
-                  <h5>Web Developer at Accenture</h5> 
-                  <p class="location">Mumbai, Maharashtra, India</p>
-                  <button type="button" class="btn cust-btn cust-primary-btn btn-primary">Add profile section&nbsp;&nbsp;&nbsp;<span class="fa fa-caret-down"></span></button>
-                  <button type="button" class="btn cust-btn cust-outline-btn btn-outline-primary">More...</button>
-                </div>
-                <div class="col-sm-5 mt-3">
-                  <ul class="list">
-                    <li class="list-item"><a href="#"><img src="./img/accenture-logo.jpg"><span>Accenture</span></a></li>
-                    <li class="list-item"><a href="#"><img src="./img/fcc-logo.png"><span>Free Code Camp</span></a></li>
-                    <li class="list-item"><a href="#"><span class="far fa-address-book"></span><span>See contact info</span></a></li>
-                    <li class="list-item"><a href="#"><span class="fas fa-user-friends"></span><span>See connections (39)</span></a></li>
-                  </ul>
-                </div>
-              </div>
-              <hr>
-              <p class="card-text">Bachelor of Science in Information Technology with demonstrated history of working in Computer Science and service industry for the past 2 years. Looking for an opportunity to work as a Software Engineer / Programmer with a reputed organization where my skills and knowledge can be utilized.</p>
-            </div>
-          </div>
+          
           
           <!-- Experience -->
           <div class="card experience mb-3">
@@ -181,7 +160,7 @@
       </div>
     </section>
 
-
+    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
