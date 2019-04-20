@@ -1,0 +1,49 @@
+
+
+
+
+
+/* Main */
+
+.main {
+	margin: 30px auto;
+}
+.form-wrapper {
+	background-color: #eeeeee;
+}
+a, a:hover {
+	text-decoration: none;
+}
+.icon-menu img {
+	display: block!important;
+  	margin: 0 auto!important;
+  	height: 50px;
+  	width: 50px;
+  	border-radius: 10px;
+  	padding: 10px;
+  	background-color: skyblue;
+}
+.main span {
+	display: inline-block;
+	max-width: 100px;
+	text-align: center;
+	line-height: 1.1;
+}
+
+.bgColor {
+	background-color: #dedede;
+	padding: 10px;
+	margin: 0 18px;
+}
+
+.btn-secondary {
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
