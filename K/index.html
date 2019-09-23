@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Hi!</title>
+    <style>
+     body {
+        background-image: url('qq.jpg');
+        background-size: cover;
+      }
+      h1,h3,h2,h4 {
+        font-family: 'Mansalva', cursive;
+        color: whitesmoke;
+        opacity: 0.8;
+      }
+      img {
+        width: 250px;
+        height: 180px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row my-3" >
+        <div class="col-12 text-center">
+          <p style="color: whitesmoke">I know this look ugly, but could not get a CP to design it so...</p>
+        </div>
+      </div>
+
+      <div class="row my-3" id="options0" style="display: none;">
+        <div class="col-12 text-center">
+          <h3>Go ahead ;)</h3>
+        </div>
+      </div>
+
+      <div class="row my-5" id="options1">
+        <div class="col col-sm-4 col-md-4 col-lg-4">
+          <div class="card">
+            <img src="coffee.jpg" class="card-img-top img-responsive" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Coffee?</h5>
+              <p class="card-text">let's grab a cup of Coffee? </p>
+              <a href="#" class="btn btn-primary">Coffee</a>
+            </div>
+          </div>
+        </div>
+        <div class="col col-sm-4 col-md-4 col-lg-4">
+          <div class="card">
+            <img src="drink.jpg" class="card-img-top img-responsive" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Something Else?</h5>
+              <p class="card-text">Something to eat maybe?</p>
+              <a href="#" class="btn btn-primary">Something</a>
+            </div>
+          </div>
+        </div>
+        <div class="col col-sm-4 col-md-4 col-lg-4">
+          <div class="card">
+            <img src="tea.jpg" class="card-img-top img-responsive" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Tea?</h5>
+              <p class="card-text">let's grab a cup of Tea? maybe?</p>
+              <a href="#" class="btn btn-primary">Tea</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row my-5" id="options2" style="display: none;">
+
+        <div class="col col-sm-4 col-md-4 col-lg-4">
+          <div class="card">
+            <img src="scifi.jpg" class="card-img-top img-responsive" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Sci Fi?</h5>
+              <p class="card-text">Some Sci fi or Maybe a Marvel movie? </p>
+              <a href="#" class="btn btn-primary">Sci Fi</a>
+            </div>
+          </div>
+        </div>
+        <div class="col col-sm-4 col-md-4 col-lg-4">
+          <div class="card">
+            <img src="com.jpg" class="card-img-top img-responsive" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Comedy?</h5>
+              <p class="card-text">Maybe a bollywood comedy movie?</p>
+              <a href="#" class="btn btn-primary">Comedy</a>
+            </div>
+          </div>
+        </div>
+        <div class="col col-sm-4 col-md-4 col-lg-4">
+          <div class="card">
+            <img src="rom.jpg" class="card-img-top img-responsive" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Rom Com?</h5>
+              <p class="card-text">Some cliche romatic movie?</p>
+              <a href="#" class="btn btn-primary">Romantic</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row my-5" id="options3" style="display: none;">
+        <div class="col col-sm-4 col-md-4 col-lg-4">
+          <div class="card">
+            
+            <div class="card-body text-center">
+              <h5 class="card-title">This Week</h5>
+              <p class="card-text"></p>
+              <a href="#" class="btn btn-primary">Go somewhere7</a>
+            </div>
+          </div>
+        </div>
+        <div class="col col-sm-4 col-md-4 col-lg-4">
+          <div class="card">
+            
+            <div class="card-body text-center">
+              <h5 class="card-title">This Month</h5>
+              <p class="card-text"></p>
+              <a href="#" class="btn btn-primary">This Month</a>
+            </div>
+          </div>
+        </div>
+        <div class="col col-sm-4 col-md-4 col-lg-4">
+          <div class="card">
+            
+            <div class="card-body text-center">
+              <h5 class="card-title">Later</h5>
+              <p class="card-text"></p>
+              <a href="#" class="btn btn-primary">Later</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row my-3" id="options4" style="display: none;">
+        <div class="col-12 text-center">
+          <h3 id="result">Select Something</h3>
+        </div>
+      </div>
+      
+
+      <div class="row my-5">
+        <div class="col-12 text-center">
+          <button class="btn btn-primary btn-lg mx-3" id="back">Back</button>
+          <button class="btn btn-primary btn-lg mx-3" id="next">Next</button>
+        </div>
+      </div>
+    </div>
+
+
+   
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script>
+     
+
+var data = {
+  "p1": "NaN",
+  "p2": "NaN",
+  "p3": "NaN",
+}
+var pageCounter = 1;
+var nextAble;
+var backAble;
+
+
+$("a").on("click", onClicking);
+$("#next").on("click", moveForward);
+$("#back").on("click", moveBackward);
+
+function onClicking(){
+  var resultTxt = "";
+  var title = $(this).text();
+  if( pageCounter == 0 || pageCounter == 1){
+    data.p1 = title;
+    resultTxt = `${data.p1} + ${data.p2} + ${data.p3} = ♥`;
+    $("#result").text(resultTxt);
+  } else if (pageCounter == 2){
+    data.p2 = title;
+    resultTxt = `${data.p1} + ${data.p2} + ${data.p3} = ♥`;
+    $("#result").text(resultTxt);
+  } else if (pageCounter == 3 || pageCounter == 4){
+    data.p3 = title;
+    resultTxt = `${data.p1} + ${data.p2} + ${data.p3} = ♥`;
+    $("#result").text(resultTxt);
+  }
+
+}
+
+function moveForward(){
+  if(pageCounter >= 1 && pageCounter <= 3)
+    
+  
+
+  
+
+    pageCounter++;
+  $(`#options${pageCounter}`).css("display", "flex");
+  $(`#options${pageCounter-1}`).css("display", "none");    
+}
+
+function moveBackward(){
+  if(pageCounter >=1 && pageCounter <=4){
+
+  
+
+
+    
+  
+    $(`#options${pageCounter}`).css("display", "none");
+    $(`#options${pageCounter-1}`).css("display", "flex");  
+    pageCounter--;
+  }
+}
+
+
+
+    </script>
+
+  </body>
+</html>
