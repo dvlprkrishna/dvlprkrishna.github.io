@@ -14,7 +14,7 @@
         background-image: url('qq.jpg');
         background-size: cover;
       }
-      h1,h3,h2,h4 {
+      h1,h2,h4 {
         font-family: 'Mansalva', cursive;
         color: whitesmoke;
         opacity: 0.8;
@@ -23,7 +23,6 @@
         width: 250px;
         height: 180px;
       }
-
     </style>
   </head>
   <body>
@@ -36,7 +35,7 @@
 
       <div class="row my-3" id="options0" style="display: none;">
         <div class="col-12 text-center">
-          <h3>Go ahead ;)</h3>
+          <h2>Go ahead ;)</h2>
         </div>
       </div>
 
@@ -166,7 +165,6 @@
 
     <script>
      
-
 var data = {
   "p1": "NaN",
   "p2": "NaN",
@@ -175,12 +173,9 @@ var data = {
 var pageCounter = 1;
 var nextAble;
 var backAble;
-
-
 $("a").on("click", onClicking);
 $("#next").on("click", moveForward);
 $("#back").on("click", moveBackward);
-
 function onClicking(){
   var resultTxt = "";
   var title = $(this).text();
@@ -197,27 +192,19 @@ function onClicking(){
     resultTxt = `${data.p1} + ${data.p2} + ${data.p3} = ♥`;
     $("#result").text(resultTxt);
   }
-
 }
-
 function moveForward(){
   if(pageCounter >= 1 && pageCounter <= 3)
     
   
-
   
-
     pageCounter++;
   $(`#options${pageCounter}`).css("display", "flex");
   $(`#options${pageCounter-1}`).css("display", "none");    
 }
-
 function moveBackward(){
   if(pageCounter >=1 && pageCounter <=4){
-
   
-
-
     
   
     $(`#options${pageCounter}`).css("display", "none");
@@ -225,9 +212,6 @@ function moveBackward(){
     pageCounter--;
   }
 }
-
-
-
     </script>
 
   </body>
