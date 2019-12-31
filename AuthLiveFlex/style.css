@@ -1,0 +1,220 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('./icons/fonts/icomoon.eot?9ow3i0');
+  src:  url('./icons/fonts/icomoon.eot?9ow3i0#iefix') format('embedded-opentype'),
+    url('./icons/fonts/icomoon.ttf?9ow3i0') format('truetype'),
+    url('./icons/fonts/icomoon.woff?9ow3i0') format('woff'),
+    url('./icons/fonts/icomoon.svg?9ow3i0#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-file-text2:before {
+  content: "\e926";
+}
+.icon-file-picture:before {
+  content: "\e927";
+}
+.icon-file-music:before {
+  content: "\e928";
+}
+.icon-file-video:before {
+  content: "\e92a";
+}
+
+
+
+
+
+
+body {
+    font-family: 'Roboto', 'Open Sans', Helvetica,'Fira Sans', sans-serif ;
+  font-size: 16px;
+  height: 100vh;
+  position: relative;
+  background-image: linear-gradient(to bottom, #1C1C1C, #1C1C1C 50%, #007BFF 50%, #007BFF);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+svg {
+  fill: whitesmoke;
+}
+body:after{
+    content:'Auth Life';
+    font-size: 10em;
+    font-family: 'Roboto', 'Open Sans', Helvetica,'Fira Sans', sans-serif ;
+    position: absolute;
+    text-align: left;
+    color: #00000014;
+    transform: scale(1);
+    left: 20%;
+    z-index: 1;
+    bottom: 17%;
+    text-transform: uppercase;
+    line-height: 5px;
+}
+#divwrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Header */
+#nav {
+  padding: 2rem 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+  align-items: baseline;
+}
+#nav a {
+  color: whitesmoke;
+  text-decoration: none;
+  margin-right: 2rem;
+}
+
+
+/* Main Area */
+
+.cstmsearch {
+  font-size: 1rem;
+  position: fixed; /* or absolute */
+  top: 50%;
+  left: 50%;
+  border: 3px solid #77777769;
+  max-width: 35vw;
+  width: 35vw;
+  padding: 1.5% 0 1.5% 1.5%;
+  transform: translateX(-50%) translateY(-50%);
+  border-radius: 30px;
+  background-image: url('./icons/search.svg');
+  background-position: 95%;
+  background-repeat: no-repeat, no-repeat;
+  background-color: #fff, #fff;
+  background-size: 18px, 18px;
+}
+.cstmsearch:focus {outline:0;}
+
+.relocated {
+  top: 7%;
+  left: 35%;
+  font-size: 1rem;
+  position: fixed; /* or absolute */
+  border: 3px solid #77777769;
+  max-width: 35vw;
+  width: 35vw;
+  padding: 0.8% 0 0.8% 0.8%;
+  transform: translateX(-50%) translateY(-50%);
+  border-radius: 2px;
+  background-image: url('./icons/search.svg');
+  background-position: 95%;
+  background-repeat: no-repeat, no-repeat;
+  background-color: #fff, #fff;
+  background-size: 18px, 18px;
+  transition: .3s;
+  color: #cccccc;
+  background-color: #333333;
+  border-color: #333333;
+  /*box-shadow: 0 2px 3px rgba(0,0,0,0.5);*/
+}
+.relocated:focus {outline:0;}
+
+.bgcolor {
+  background-image: linear-gradient(to bottom, #1C1C1C, #1C1C1C 100%);   
+  transition: background-image 0.5s ease-in-out;
+}
+
+/*Results*/
+    
+    #results {
+      display: flex;
+      justify-content: space-around;
+    }
+    #listwrap {
+      width: 50vw;
+      background-color: #1C1C1C;
+    }
+
+     #previewrap {
+      width: 45vw;
+      background-color: #1C1C1C;
+    }
+    .list {
+      padding: 20px;
+      border: 1px solid transparent;
+
+    }
+    .list:hover {
+      border: 1px solid #282828;
+      background: #282828;
+      border-radius: 0.25rem;
+      color: #cccccc;
+    }
+    .list, .list a {
+      color: whitesmoke!important;
+      text-decoration: none;
+    }
+    .list-link h3 {
+      color: #efbb35;
+      color: #678FFF;
+      padding-bottom: 5px;
+    }
+    .list-link cite {
+      color: #776633;
+      color: #78BE20;
+    }
+    .desc p {
+      color: #f9ffee;
+      color: #cccccc;
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: normal;
+      padding: 6px 0;
+    }
+    .drilldown-link {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .preview-btn {
+      background-color: #678FFF;
+      border-radius: 2px;
+      padding:  4px 10px;
+      font-size: 14px;
+      line-height: 21px;
+      color: whitesmoke;
+    }
+    .preview-opt {
+      display: flex;
+      flex-direction: row;
+
+    }
+    .preview-opt a {
+
+      color: #cccccc!important;
+    }
+/* Footer */
