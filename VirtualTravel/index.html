@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Virtual Travel - Dvlpr.in</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <style>
+      input[type="search"]::placeholder{
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body style="font-family: 'Roboto', sans-serif; background: #151414; background-image: url(topographic-pattern.png); ">
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-12 mx-auto" >
+          <div class="d-flex justify-content-center align-items-center flex-column" style="height: 100vh;">
+            <div style="background-color: rgba(0,0,0,.5); padding: 5rem;border-radius: 1rem;position: absolute;margin: 1rem auto">
+              <p class="my-3" style="font-size: 1.6rem; color: #fefefe; font-weight: 300; letter-spacing: .6px; font-style: italic;">
+                Type a city you want to travel in ..
+              </p>
+              <div class="d-flex ">
+                <input type="search" id="query" name="query" placeholder="ex: Mumbai" class="form-control">
+                <button class="ml-2 btn btn-danger">Go</button>
+              </div>
+              
+ 
+
+              <cite class="pull-right m-1"><a class="text-muted" href="http://dvlpr.in/" target="_blank" style="position: absolute;bottom: 1rem;right: 1rem;font-size: 0.8rem;">Dvlpr ~</a></cite>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <iframe width="100%" height="250px" id="vid-container" class="d-none" style="margin-top: 1rem;border: 2px dashed #fefefe;">
+      
+    </iframe>
+    <audio preload="auto" id="song" controls="controls" style="visibility: hidden;">
+        <source src="https://sg1.fastcast4u.com/proxy/dzcwbfih?mp=/1" type="audio/mpeg">
+    </audio>
+  <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+     
+    
+
+      <script type="text/javascript">
+        const yt_key = "AIzaSyBI2LBnj9s7beeWF9EB0t_aqgXJCw_2vh0"; 
+        var city_name;
+        $('input[name=query]').change(function(){
+          city_name = $('input[name=query]').val();
+          var frmt_city_name = city_name.replace(/\s/g,"%20");
+          var qappend = frmt_city_name+"%20dashcam%07Timelapse";
+          console.log(qappend);
+
+          var url = `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=${qappend}&type=video&key=${yt_key}`;
+          console.log(url);
+
+          fetch(url)
+            .then(response => response.json())
+            .then(data => {
+              console.log(data);  
+              var vidsrc = `${data.items[0].id.videoId}`;
+              $("#vid-container").removeAttr('class');
+              $("#vid-container").css({'border':'0', 'position':'absolute', 'top':'0','bottom':'0','left':'0','right':'0'});
+              $(".ytp-youtube-button").css({'display':'none!important'});
+              $(".ytp-fullscreen-button").css({'display':'none!important'});
+              $(".container").addClass('d-none');
+              document.querySelector("#vid-container").src = `https://www.youtube.com/embed/${data.items[0].id.videoId}?t=5s&loop=1&modestbranding=0&fs=1&start=12&autoplay=1&controls=1`;
+          });
+        });        
+      </script> 
+  
+  </body> 
+</html>
