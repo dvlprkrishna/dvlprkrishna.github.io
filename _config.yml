@@ -8,7 +8,7 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 #
-# If you need help with YAML syntax, here are some quick references for you: 
+# If you need help with YAML syntax, here are some quick references for you:
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 #
@@ -105,7 +105,7 @@ lang: en-GB # Set the site language
 title: "Dvlpr" # Site name or title, also used in jekyll-seo-tag
 logo: "/assets/logos/logo.png" # Site logo, also used in jekyll-seo-tag
 description: "A place where you can find random tech related post." # Site description and default description, also used in jekyll-seo-tag
-url: "https://dvlpr.in/blog" # Site url, also used in jekyll-seo-tag
+url: "https://dvlprkrishna.github.io/" # Site url, also used in jekyll-seo-tag
 baseurl: ""
 repo: "https://github.com/daviddarnes/alembic"
 #email: "me@dvlpr.in"
@@ -117,13 +117,13 @@ css_inline: true # Will insert all styles into a single <style> block in the <he
 
 # 8. Site favicons & manifest icons
 favicons: # Favicons are also used in the manifest file. Syntax is 'size: path'
-   
-  512: '/assets/logos/logo@512px.png' 
+
+  512: '/assets/logos/logo@512px.png'
 
 # 9. Site navigation
 navigation_header:
 - title: Home
-  url: /  
+  url: /
 - title: Categories
   url: /categories/
 # - title: Search
