@@ -2,7 +2,7 @@
 layout: post
 title:  "First Post!"
 date:   2020-10-06 16:57:42 +0530
-categories: general
+categories: General
 excerpt_separator: <!--more-->
 ---
 Hi 👋 internet stranger,
