@@ -105,7 +105,7 @@ lang: en-GB # Set the site language
 title: "Dvlpr" # Site name or title, also used in jekyll-seo-tag
 logo: "/assets/logos/logo.png" # Site logo, also used in jekyll-seo-tag
 description: "A place where you can find random tech related post." # Site description and default description, also used in jekyll-seo-tag
-url: "https://dvlprkrishna.github.io/" # Site url, also used in jekyll-seo-tag
+url: "https://dvlprkrishna.github.io" # Site url, also used in jekyll-seo-tag
 baseurl: ""
 repo: "https://github.com/daviddarnes/alembic"
 #email: "me@dvlpr.in"
