@@ -6,14 +6,16 @@ categories: general
 excerpt_separator: <!--more-->
 ---
 Hi 👋 internet stranger,
+
 You are reading the very first post from this blog.<!--more-->
+
 ![First Post! by - Dvlpr.in](/assets/post-img/first-time.png "there's first time for everything")
 
 I plan on writing content that will add value for people that identify them self as a web developer.
 
 ***Here is a list in no particular order of topics that i plan to write about -***
 
-+ Products *( Things that are online )* reviews, unless some one ship me a product.
++ Products reviews *( Things that are online, like web apps & stuffs )* , unless some one ship me an actuall product.
 + How to's, tutorials post, might do a video tutorials in future.
 + And some shower thought kind of post related to tech or life in general.
 
