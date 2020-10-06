@@ -5,7 +5,7 @@ date:   2020-10-06 16:57:42 +0530
 categories: General
 excerpt_separator: <!--more-->
 ---
-Hi 👋 internet stranger,
+Hi 👋 Stranger,
 
 You are reading the very first post from this blog.<!--more-->
 
