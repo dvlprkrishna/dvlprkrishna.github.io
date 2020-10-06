@@ -4,6 +4,7 @@ title:  "First Post!"
 date:   2020-10-06 16:57:42 +0530
 categories: General
 excerpt_separator: <!--more-->
+image: /assets/post-img/first-time.png
 ---
 Hi 👋 Stranger,
 
